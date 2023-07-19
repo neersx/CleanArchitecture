@@ -1,5 +1,4 @@
-﻿using BlazorHero.CleanArchitecture.Application.Interfaces.Serialization.Serializers;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.Validators;
 
 namespace BlazorHero.CleanArchitecture.Application.Validators.Extensions

@@ -80,7 +80,7 @@ namespace BlazorHero.CleanArchitecture.Client.Pages.Communication
             {
                 await HubConnection.StartAsync();
             }
-            HubConnection.On<string>(ApplicationConstants.SignalR.PingResponse, (userId) =>
+            HubConnection.On<string>(ApplicationConstants.SignalR.ConnectUser, (userId) =>
             {
                 var connectedUser = UserList.Find(x => x.Id.Equals(userId));
                 if (connectedUser is { IsOnline: false })
@@ -137,7 +137,7 @@ namespace BlazorHero.CleanArchitecture.Client.Pages.Communication
                 await LoadUserChat(CId);
             }
 
-            await HubConnection.SendAsync(ApplicationConstants.SignalR.PingRequest, CurrentUserId);
+            await HubConnection.SendAsync(ApplicationConstants.SignalR.ConnectUser, CurrentUserId);
         }
 
         public List<ChatUserResponse> UserList = new();

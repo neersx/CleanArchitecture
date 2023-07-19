@@ -12,11 +12,11 @@ namespace BlazorHero.CleanArchitecture.Server.Hubs
     {
         public async Task PingRequestAsync(string userId)
         {
-            await Clients.All.SendAsync(ApplicationConstants.SignalR.PingRequest, userId);
+            await Clients.All.SendAsync(ApplicationConstants.SignalR.SendMessage, userId);
         }
         public async Task PingResponseAsync(string userId, string requestedUserId)
         {
-            await Clients.User(requestedUserId).SendAsync(ApplicationConstants.SignalR.PingResponse, userId);
+            await Clients.User(requestedUserId).SendAsync(ApplicationConstants.SignalR.ReceiveMessage, userId);
         }
         public async Task OnConnectAsync(string userId)
         {

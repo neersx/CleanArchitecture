@@ -1,6 +1,7 @@
-using DreamWeddsManager.Application.Features.Templates.Queries;
+using BlazorHero.CleanArchitecture.Application.Features.Templates.Queries;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Threading.Tasks;
 
 namespace BlazorHero.CleanArchitecture.Server.Pages.Shared
 {

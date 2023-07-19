@@ -24,7 +24,7 @@
     <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
     <PackageReference Include="Hangfire" Version="1.7.28" />
     <PackageReference Include="LazyCache.AspNetCore" Version="2.4.0" />
-    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
@@ -57,6 +57,27 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Files\Images\ProfilePictures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pages\Shared\_AnnouncementStrip.cshtml" />
+    <None Include="Pages\Shared\_Contact.cshtml" />
+    <None Include="Pages\Shared\_Faq.cshtml" />
+    <None Include="Pages\Shared\_Favicon.cshtml" />
+    <None Include="Pages\Shared\_Footer.cshtml" />
+    <None Include="Pages\Shared\_Head.cshtml" />
+    <None Include="Pages\Shared\_home.content.cshtml" />
+    <None Include="Pages\Shared\_Home.Feature.cshtml" />
+    <None Include="Pages\Shared\_Home_QuickBlogs.cshtml" />
+    <None Include="Pages\Shared\_Layout.cshtml" />
+    <None Include="Pages\Shared\_LoginPartial.cshtml" />
+    <None Include="Pages\Shared\_PageBanner.cshtml" />
+    <None Include="Pages\Shared\_PageHeader.cshtml" />
+    <None Include="Pages\Shared\_PageTopNavHeader.cshtml" />
+    <None Include="Pages\Shared\_QuickThemes.cshtml" />
+    <None Include="Pages\Shared\_SideBar.cshtml" />
+    <None Include="Pages\Shared\_Testimonials.cshtml" />
+    <None Include="Pages\Shared\_Title.Section.cshtml" />
+    <None Include="Pages\Shared\_ValidationScriptsPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Files\Images\Products\demo.jpg">

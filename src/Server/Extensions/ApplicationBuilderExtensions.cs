@@ -58,7 +58,7 @@ namespace BlazorHero.CleanArchitecture.Server.Extensions
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
-                endpoints.MapFallbackToFile("index.html");
+                //endpoints.MapFallbackToFile("index.html");
                 endpoints.MapHub<SignalRHub>(ApplicationConstants.SignalR.HubUrl);
             });
 

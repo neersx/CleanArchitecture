@@ -2,8 +2,10 @@
 using BlazorHero.CleanArchitecture.Domain.Contracts;
 using BlazorHero.CleanArchitecture.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace BlazorHero.CleanArchitecture.Infrastructure.Repositories
@@ -41,6 +43,11 @@ namespace BlazorHero.CleanArchitecture.Infrastructure.Repositories
         public async Task<T> GetByIdAsync(TId id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
+        }
+
+        public async Task<T> FindByAsync(Expression<Func<T, bool>> match)
+        {
+            return await _dbContext.Set<T>().FirstOrDefaultAsync(match);
         }
 
         public async Task<List<T>> GetPagedResponseAsync(int pageNumber, int pageSize)

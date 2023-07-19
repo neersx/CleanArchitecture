@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using BlazorHero.CleanArchitecture.Domain.Contracts;
 
@@ -10,6 +12,8 @@ namespace BlazorHero.CleanArchitecture.Application.Interfaces.Repositories
         IQueryable<T> Entities { get; }
 
         Task<T> GetByIdAsync(TId id);
+
+        Task<T> FindByAsync(Expression<Func<T, bool>> match);
 
         Task<List<T>> GetAllAsync();
 
