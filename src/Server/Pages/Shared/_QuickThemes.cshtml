@@ -1,0 +1,62 @@
+﻿@using System.Linq;
+
+<section class="py-2 bg-gray-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 ms-auto me-auto text-center">
+                <h3 class="text-black  mb-0 mt-1">Top Selling Themes</h3>
+                 <p>We have made it easy for you to choose your favorite themese by perfectly curated top selling designs.</p>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var item in Model.ViewData["Templates"])
+            {
+                <div class="col-lg-3 mb-lg-0 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" height="170px" src="@item.ThumbnailImageUrl">
+                        <div class="position-relative overflow-hidden" style="height:50px;margin-top:-50px;">
+                            <div class="position-absolute w-100 top-0 z-index-1">
+                                <svg class="waves waves-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                                    <defs>
+                                        <path id="card-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                                    </defs>
+                                    <g class="moving-waves">
+                                        <use xlink:href="#card-wave" x="48" y="-1" fill="rgba(255,255,255,0.30"></use>
+                                        <use xlink:href="#card-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                                        <use xlink:href="#card-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                                        <use xlink:href="#card-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                                        <use xlink:href="#card-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                                        <use xlink:href="#card-wave" x="48" y="16" fill="rgba(255,255,255,0.99)"></use>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            @foreach (var tag in item.Tags.Split(','))
+                            {
+                                <span class="text-gradient text-primary text-uppercase text-xs font-weight-bold my-2">@tag • </span>
+                            }
+                            <br>
+                            <h4>@item.Name</h4>
+                            <p style="font-size:small">
+                                @(item.AboutTemplate.Substring(0, 100))...
+                            </p>
+                            <div class="row justify-content-center text-center">
+                                <div class="col-lg-6 col-6">
+
+                                    <a href="@item.TemplateUrl" class="btn btn-sm btn-outline-primary">
+                                        <span class="btn-inner--text">Demo</span>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <a asp-page="/Themes/Weddings/Details" asp-route-name="@item.Name.ToLower().Replace(' ', '-')" class="btn btn-sm bg-gradient-primary">BUY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+          
+        </div>
+    </div>
+</section>

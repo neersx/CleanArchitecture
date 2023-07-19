@@ -1,0 +1,187 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page | Dream Wedds";
+}
+
+<partial name="_PageBanner" />
+<partial name="_AnnouncementStrip" />
+<partial name="_Home.Feature" />
+<partial name="_QuickThemes" view-data="ViewData" />
+<!-- START Testimonials w/ user image & text & info -->
+<section class="bg-gradient-primary position-relative overflow-hidden">
+    <img src="../../assets/img/shapes/waves-white.svg" alt="pattern-lines" class="position-absolute opacity-6">
+    <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+        <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>wave-down</title>
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g fill="#FFFFFF" fill-rule="nonzero">
+                    <g id="wave-down">
+                        <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z"
+                              id="Path-Copy-2"
+                              transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) ">
+                        </path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="container pt-5 pb-7">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center flex-column">
+                <div id="carouselExampleIndicator" class="carousel slide py-7" data-bs-ride="carousel">
+                    <ol class="carousel-indicators justify-content-start ms-0">
+                        <a href="javascript:;">
+                            <img src="~/assets/img/illustrations/chat.png" alt="..."
+                                 class="avatar avatar-sm avatar-scale-up shadow border-0 active"
+                                 data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0">
+                            <span class="text-white mx-2">&#124;</span>
+                        </a>
+
+                        <a href="javascript:;">
+                            <img src="~/assets/img/illustrations/chat.png" alt="..."
+                                 class="avatar avatar-sm avatar-scale-up shadow border-0"
+                                 data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1"> <span class="text-white mx-2">&#124;</span>
+                        </a>
+
+                        <a href="javascript:;">
+                            <img src="~/assets/img/illustrations/chat.png" alt="..."
+                                 class="avatar avatar-sm avatar-scale-up shadow border-0"
+                                 data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2">
+                        </a>
+                    </ol>
+                    <div class="carousel-inner">
+                        <h2 class="text-white mb-0">What customers think about us?</h2>
+                        <p class="text-white opacity-8 mb-1">We closely work with individual customers untill we deliver their expectations!</p>
+                        <hr class="text-white horizontal opacity-6 mb-4 mt-2 w-25 text-start">
+                        <div class="carousel-item active">
+                            <h6 class="text-white opacity-8 pe-5">
+                                "I recently purchased a wedding website from your company and I wanted to thank you for the outstanding service. The website was everything I wanted and more; the design was beautiful, the features were intuitively organized, and the overall experience of using the website was incredibly easy and enjoyable. I was also impressed by the customer service I received throughout the process. Everyone I interacted with was knowledgeable, friendly, and very helpful.
+                                Thank you for making my wedding website experience so positive. I will happily recommend your services to friends and family."
+                            </h6>
+                            <div class="author mt-4">
+                                <div class="name">
+                                    <span class="text-white">Richa Gupta</span>
+                                    <div class="stats">
+                                        <small class="text-white opacity-6">Finance Manager, Infosys</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h6 class="text-white opacity-8 pe-5">
+                                "Dear DreamWedds,
+                                The design of the website is stunning, and my daughter is very happy looking at it. I have received a lot of compliments from my friends and family on the website, and they are all very impressed by the design.
+                                I also wanted to thank you for the great customer service I received throughout the process. Everyone I interacted with was knowledgeable and friendly, and answered all my questions quickly and thoroughly.
+
+                                Thank you for making my wedding website experience so positive. I will happily recommend your services to anyone looking for a great wedding website."
+                            </h6>
+                            <div class="author mt-4">
+                                <div class="name">
+                                    <span class="text-white">Parvati Singh</span>
+                                    <div class="stats">
+                                        <small class="text-white opacity-6">Sr. Manager, Cognizant</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h6 class="text-white opacity-8 pe-5">
+                                "I'm so pleased with the service and website designs I purchased a theme for my wedding. The designers truly went above and beyond to create
+                                a beautiful and unique website that fit our wedding theme perfectly. The designs they created were creative, modern, and absolutely stunning. The customer service was also outstanding. Everyone I interacted with was knowledgeable, friendly, and truly went the extra mile to make sure I was happy with the results.
+                                I would highly recommend this company to anyone looking for quality website design for their special event."
+                            </h6>
+                            <div class="author mt-4">
+                                <div class="name">
+                                    <span class="text-white">Supriay Shukla</span>
+                                    <div class="stats">
+                                        <small class="text-white opacity-6">Teacher at Lotus Valley School, Mumbai</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-absolute w-100 bottom-0">
+        <svg width="100%" viewBox="0 -1 1920 166" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>wave-up</title>
+            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(0.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g id="wave-up" transform="translate(0.000000, -5.000000)">
+                        <path d="M0,70 C298.666667,105.333333 618.666667,95 960,39 C1301.33333,-17 1621.33333,-11.3333333 1920,56 L1920,165 L0,165 L0,70 Z">
+                        </path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+</section>
+<!-- END Testimonials w/ user image & text & info -->
+<!-- -------- START Features w/ icons and text on left & gradient title and text on right -------- -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-gradient text-primary mb-0 mt-2">Read More About Us</h3>
+                <h3>The most important</h3>
+                <p>
+                    At DreamWedds, we understand that your wedding day is one of the most important days of your life, which is 
+                    why we are committed to providing you with the best possible service. We provide a wide range of wedding themes, including website design, photo galleries, guest list management, and more. Our goal is to provide you with a 
+                    stress-free wedding website experience, so you can focus on what matters most – celebrating your love.
+                </p>
+                <a asp-page="/aboutus" class="text-primary icon-move-right">
+                    More about us
+                    <i class="fas fa-arrow-right text-sm ms-1"></i>
+                </a>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+                <div class="p-3 info-horizontal">
+                    <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                        <i class="fas fa-ship opacity-10"></i>
+                    </div>
+                    <div class="description ps-3">
+                        <p class="mb-0">
+                            We are the team who respects all religion's culture and tradition. We get our heart and mind in the service.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-3 info-horizontal">
+                    <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                        <i class="fas fa-handshake opacity-10"></i>
+                    </div>
+                    <div class="description ps-3">
+                        <p class="mb-0">
+                            Our development team has experts with intelligent innovative ideas that bring beautiful wedding templates.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-3 info-horizontal">
+                    <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                        <i class="fas fa-hourglass opacity-10"></i>
+                    </div>
+                    <div class="description ps-3">
+                        <p class="mb-0">
+                            While developing any wedding website our first priority is <br /> always to take care of there weding traditions. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -------- END Features w/ icons and text on left & gradient title and text on right -------- -->
+<partial name="_Home.Content" />
+
+
+@section Scripts{
+    <!-- Mandatory init script -->
+    <script>
+
+    </script>
+}

@@ -1,0 +1,154 @@
+﻿@page
+@model BlazorHero.CleanArchitecture.Server.Pages.ContactUsModel
+@{
+}
+
+<header>
+    <div class="page-header min-vh-50 py-3" style="background-image: url('../assets/img/curved-images/curved10.jpg')">
+        <span class="mask bg-gradient-dark"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-white text-center">
+                    <h2 class="text-white mt-5">What do you need?</h2>
+                    <p class="lead">We're here to help you for a better understanding. First, let's figure out if we have a solution in our documentation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative overflow-hidden" style="height:36px;margin-top:-35px;">
+        <div class="w-full absolute bottom-0 start-0 end-0" style="transform: scale(2);transform-origin: top center;color: #f8f9fa;">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row bg-white shadow mt-n6 border-radius-md py-4 p-3 position-relative">
+            <div class="col-md-10 mb-md-0 mb-2">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search is disabled for now. Coming Soon!">
+                </div>
+            </div>
+            <div class="col-md-2 ps-md-0">
+                <button disabled type="button" class="btn bg-gradient-primary w-100 mb-0 h-100 position-relative z-index-2">Search</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <p class="ps-md-0"><span class="text-uppercase">Recent Searches:</span><i>"How to get my wedding theme", "How to get my website ready"..</i></p>
+        </div>
+    </div>
+</header>
+<section class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card overflow-hidden">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <form class="p-3" id="contact-form" method="post">
+                                <div class="card-header px-4 py-sm-5 py-3">
+                                    <h2>Say Hi!</h2>
+                                    <p class="lead"> We&#39;d like to talk with you.</p>
+                                </div>
+                                @if (ViewData["Success"] == "Success")
+                                {
+                                    <div class="alert bg-gradient-primary text-sm  text-white " role="alert">
+                                        <strong>Received!</strong> Thank you for reaching us. Our team will connect with you shortly.
+                                    </div>
+                                }
+                                
+                                <div class="card-body pt-1">
+                                    <div class="row">
+                                        <div class="col-md-6 pe-2 mb-3">
+                                            <label>First Name</label>
+                                            <input class="form-control" asp-for="Request.FirstName" placeholder="First Name" type="text">
+                                        </div>
+
+                                        <div class="col-md-6 pe-2 mb-3">
+                                            <label>Last Name</label>
+                                            <input class="form-control" asp-for="Request.LastName" placeholder="Last Name" type="text">
+                                        </div>
+
+                                        <div class="col-md-12 pe-2 mb-3">
+                                            <label>Email</label>
+                                            <input class="form-control" asp-for="Request.Email" placeholder="Email" type="text">
+                                        </div>
+
+                                        <div class="col-md-12 pe-2 mb-3">
+                                            <label>Mobile</label>
+                                            <input class="form-control" asp-for="Request.Mobile" placeholder="Mobile" type="text">
+                                        </div>
+
+                                        <div class="col-md-12 pe-2 mb-3">
+                                            <div class="form-group mb-0">
+                                                <label>Your Message</label>
+                                                @Html.TextAreaFor(m => m.Request.Message,  new { @class = "form-control", @placeholder = "I want to say that...", rows=4 })
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6 text-end ms-auto">
+                                            <button type="submit" class="btn btn-primary btn-round bg-gradient-primary mb-0">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="col-lg-5 position-relative bg-cover px-0" style="background-image: url(&#39;../../assets/img/curved-images/curved5.jpg&#39;)">
+                            <div class="position-absolute z-index-2 w-100 h-100 top-0 start-0 d-lg-block d-none">
+                                <img src="../../assets/img/wave-1.svg" class="h-100 ms-n2">
+                            </div>
+                            <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+                                <div class="mask bg-gradient-primary opacity-9"></div>
+                                <div class="p-5 ps-sm-8 position-relative text-start my-auto">
+                                    <h3 class="text-white">Contact Information</h3>
+                                    <p class="text-white opacity-8 mb-4">Fill up the form and our Team will get back to you within 24 hours.</p>
+                                    @* <div class="d-flex p-2 text-white">
+                                    <div>
+                                    <i class="fas fa-phone text-sm"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                    <span class="text-sm opacity-8">(+40) 772 100 200</span>
+                                    </div>
+                                    </div> *@
+                                    <div class="d-flex p-2 text-white">
+                                        <div>
+                                            <i class="fas fa-envelope text-sm"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <span class="text-sm opacity-8">dream@dreamwedds.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex p-2 text-white">
+                                        <div>
+                                            <i class="fas fa-map-marker-alt text-sm"></i>
+                                        </div>
+                                        <div class="ps-3">
+                                            <span class="text-sm opacity-8">New Delhi, India</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4 z-index-2">
+                                        <a href="https://facebook.com/dreamwedds" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Facebook">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a href="https://twitter.com/thedreamwedds" type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        @* <a href="https://facebook.com/dreamwedds" type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Dribbble">
+                                        <i class="fab fa-dribbble"></i>
+                                        </a> *@
+                                        <a href="https://instagram.com/dreamwedds" type="button" class="btn btn-icon-only btn-link text-white btn-lg mb-0" data-toggle="tooltip" data-placement="bottom" data-original-title="Log in with Instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

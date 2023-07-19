@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <partial name="_Head" />
+    @RenderSection("HeadBlock", required: false)
+
+</head>
+
+<body class="g-sidenav-show  bg-gray-100">
+    <partial name="_PageTopNavHeader" />
+    @RenderBody()
+    <partial name="_Footer" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+
+    <!-- Core -->
+    <script src="/assets/js/core/popper.min.js"></script>
+    <script src="/assets/js/core/bootstrap.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/soft-design-system-pro.min.js" type="text/javascript"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

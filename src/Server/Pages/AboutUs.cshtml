@@ -1,0 +1,66 @@
+﻿@page
+@model BlazorHero.CleanArchitecture.Server.Pages.AboutUsModel
+@{
+}
+
+<partial name="_PageHeader" />
+<!-- -------- START HEADER 8 w/ card over right bg image ------- -->
+<header>
+    <div class="page-header min-vh-70">
+        <div class="position-absolute border-radius-lg border-top-start-radius-0 border-top-end-radius-0 border-bottom-end-radius-0 fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/office.jpg'); background-size:cover;">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 d-flex justify-content-center flex-column">
+                    <div class="card card-body blur d-flex justify-content-center px-5 shadow-lg mt-lg-5 mt-3 py-5">
+                        <h1 class="text-gradient text-primary mb-0">About Us!</h1>
+                        <h2 class="mb-4">We help dream come true</h2>
+                        <p class="lead pe-sm-5 me-sm-5">We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</p>
+                        <h5 class="mt-3">Connect with us on</h5>
+                        <div class="d-flex justify-content-start">
+                            <a href="https://www.facebook.com/dreamwedds"><i class="fab fa-facebook text-dark me-4 text-lg"></i></a>
+                            <a href="https://www.instagram.com/dreamwedds"><i class="fab fa-instagram text-dark me-4 text-lg"></i></a>
+                            <a href="https://twitter.com/thedreamwedds"><i class="fab fa-twitter text-dark me-4 text-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- -------- END HEADER 8 w/ card over right bg image ------- -->
+<!-- START Blogs w/ 3 images & quote & text -->
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 ms-auto me-auto">
+                <h6 class="opacity-7 text-uppercase font-weight-bolder text-sm">The Idea</h6>
+                <h3 class="title mb-4">Who We Are</h3>
+                <p class="text-dark">
+                    At DreamWedds, we understand that your wedding day is one of the most important days of your life, which is why we are committed to providing you with the best possible service. We provide a wide range of services, including website design, photo galleries, guest list management, and more. Our goal is to provide you with a stress-free wedding planning experience, so you can focus on what matters most – celebrating your love.
+                    Our team is comprised of experienced and knowledgeable professionals who are passionate about creating the perfect wedding website. We strive to provide a unique and tailored service to each of our clients, ensuring that every detail is taken into consideration. We also have a dedicated support team who will be available to answer any questions or queries you may have.
+                    <br />
+                    We take pride in our ability to provide a comprehensive wedding website service, and we are confident that you will be thrilled with the results. Thank you for considering DreamWedds, and we look forward to helping you create the perfect wedding website.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="page-header min-vh-50 mt-5" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/glass-wall.jpg')">
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="position-absolute w-100 z-index-1 bottom-0">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                </defs>
+                <g class="moving-waves">
+                    <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+                    <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1"></use>
+                </g>
+            </svg>
+        </div>
+    </div>
+</section>
