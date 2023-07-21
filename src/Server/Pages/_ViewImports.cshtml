@@ -1,18 +1,9 @@
 ﻿@using Blazored.LocalStorage;
-@using DreamWeddsManager.Client.Infrastructure.Managers.Identity.Account;
-@using DreamWeddsManager.Client.Infrastructure.Managers.Identity.Users;
-@using DreamWeddsManager.Client.Infrastructure.Managers.Interceptors;
-@using DreamWeddsManager.Client.Infrastructure.Managers.Preferences;
-@using DreamWeddsManager.Infrastructure.Models.Identity;
 @using Microsoft.AspNetCore.Identity
-@using DreamWedds.Client.WebApp
-@using DreamWedds.Client.WebApp.Data
-@using DreamWedds.Client.WebApp.Extensions;
-@using DreamWedds.Client.WebApp.Models;
-@inject SmartSettings Settings
+@using BlazorHero.CleanArchitecture.Infrastructure.Models.Identity
 @namespace BlazorHero.CleanArchitecture.Server.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, DreamWedds.Client.WebApp
+@addTagHelper *, BlazorHero.CleanArchitecture.Server
 @inject SignInManager<BlazorHeroUser> SignInManager
 
 

@@ -14,6 +14,7 @@ using System.IO;
 using BlazorHero.CleanArchitecture.Server.Filters;
 using BlazorHero.CleanArchitecture.Server.Managers.Preferences;
 using Microsoft.Extensions.Localization;
+using BlazorHero.CleanArchitecture.Application.Interfaces.Common;
 
 namespace BlazorHero.CleanArchitecture.Server
 {
@@ -90,6 +91,7 @@ namespace BlazorHero.CleanArchitecture.Server
                 Authorization = new[] { new HangfireAuthorizationFilter() }
             });
             app.UseEndpoints();
+
             app.ConfigureSwagger();
             app.Initialize(_configuration);
         }
