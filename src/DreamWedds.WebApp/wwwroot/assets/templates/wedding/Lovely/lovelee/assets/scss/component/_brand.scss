@@ -1,0 +1,66 @@
+/**
+********************************************
+************* 13.Brand
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+.lv-brand {
+	&-flex-wrap {
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	    grid-column-gap: 20px;
+	    @media #{$lg} {
+	    	justify-content: flex-start;
+	    }
+	}
+	&-flex-single {
+		& img {
+			opacity: .25;
+		}
+		&:hover {
+			& img {
+				opacity: .7;
+			}
+		}
+	}
+	&-title-2 {
+		font-size: 14px;
+	    text-transform: uppercase;
+	    margin-bottom: 0;
+	    position: relative;
+	    @media #{$xs} {
+	    	line-height: 1.4;
+	    }
+	}
+}
+.lv-brand-flex-wrap > * {
+	@media #{$xs} {
+		flex: 0 0 46%;
+	}
+}
+.lv-brand-title-sudo-lines-2 {
+	& span {
+		width: 160px;
+		height: 1px;
+		display: inline-block;
+		background-color: var(--clr-border-light);
+		position: absolute;
+		&:nth-child(1) {
+	        right: calc(100% + 21px);
+			top: 5px;
+		}
+		&:nth-child(2) {
+		    right: calc(100% + 21px);
+			top: 12px;
+		}
+		&:nth-child(3) {
+	        left: calc(100% + 21px);
+			top: 5px;
+		}
+		&:nth-child(4) {
+		    left: calc(100% + 21px);
+			top: 12px;
+		}
+	}
+}

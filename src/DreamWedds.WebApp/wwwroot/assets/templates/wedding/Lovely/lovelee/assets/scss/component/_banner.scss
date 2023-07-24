@@ -1,0 +1,261 @@
+/**
+********************************************
+************* 7.Banner
+********************************************
+*/
+@use '../abstract/mixins' as *;
+@use '../abstract/breakpoints' as *;
+.lv-weiding-video {
+	&-banner {
+		&-box {
+		background-color: var(--clr-common-black);
+			& .lv-weiding-video-banner-pos {
+				@include centered_text;
+			}
+		}
+		&-link {
+		    width: 184px;
+			height: 184px;
+			display: inline-block;
+			line-height: 184px;
+			text-align: center;
+			font-size: 23px;
+			border-radius: 50%;
+			color: var(--clr-common-white);
+			&:hover {
+				color: var(--clr-common-white);
+			}
+			& svg {
+				@include strockSvg(--clr-common-white);
+			}
+			&:hover svg {
+			  @include hoverStrockSvg;
+			}
+		}
+		&-height {
+			min-height: 580px;
+			@media #{$xs} {
+				min-height: 450px;
+			}
+		}
+		&-path {
+		    position: absolute;
+		    right: -207px;
+		    top: 25px;
+	    	z-index: -1;
+		    @media #{$xl} {
+				right: -90px;
+			}
+		}
+	}
+}
+.weidding-video-banner-space {
+	margin-top: -290px;
+	z-index: 5;
+	position: relative;
+}
+.lv-banner {
+	&-content {
+		&-inner-3 {
+			overflow: hidden;
+		}
+	}
+	&-title-3 {
+	    font-size: 130px;
+	    line-height: 1.1;
+	    @media #{$xl} {
+	    	font-size: 100px;
+	    }
+	    @media #{$lg} {
+    	    font-size: 100px;
+	    }
+	    @media #{$md} {
+	    	font-size: 80px;
+	    }
+	    @media #{$xs} {
+	    	font-size: 44px;
+	    }
+	}
+	&-img-3 {
+	   width: 350px;
+	    height: 450px;
+	    background-color: var(--clr-theme-primary);
+	    float: left;
+	    @media #{$xs} {
+	    	float: none;
+	    }
+	}
+	&-link-3 {
+		display: inline-block;
+	    border: 1px solid var(--clr-common-black);
+	    height: 50px;
+	    line-height: 48px;
+	    text-transform: uppercase;
+	    font-size: 14px;
+	    color: var(--clr-common-black);
+	    padding: 0 40px;
+	    &:hover {
+	    	background-color: var(--clr-common-black);
+	    	color: var(--clr-common-white);
+	    }
+	}
+}
+.pr-285 {
+	padding-right: 285px;
+}
+.pt-275 {
+	padding-top: 275px;
+}
+.pr-235 {
+	padding-right: 235px;
+}
+.lv-banner-extra-team-member-single-thumb-3 {
+	&-1 {
+	    width: 350px;
+	    height: 500px;
+	    position: absolute;
+	    top: 235px;
+	    left: 0;
+	    @media #{$xxxl} {
+	    	width: 290px;
+			height: 360px;
+			top: 185px;
+	    }
+	    @media #{$xxl} {
+	    	width: 200px;
+			height: 280px;
+			top: 135px;
+	    }
+	    @media #{$lg} {
+	    	width: 220px;
+			height: 250px;
+			top: 0;
+	    }
+	    @media #{$xl} {
+	    	width: 220px;
+			height: 240px;
+			top: 11px;
+	    }
+	    @media #{$md} {
+	    	width: 190px;
+			height: 230px;
+			top: 0;
+	    }
+	    @media #{$xs} {
+	    	position: static;
+			margin: 30px 15px;
+			height: 396px;
+			width: calc(100% - 30px);
+	    }
+	}
+	&-2 {
+	    width: 400px;
+	    height: 550px;
+	    position: absolute;
+	    right: 0;
+	    top: 8px;
+	    @media #{$xxl} {
+	    	width: 310px;
+			height: 420px;
+	    }
+	    @media #{$lg} {
+	    	width: 280px;
+		    height: 360px;
+	    }
+	    @media #{$md} {
+	    	width: 240px;
+			height: 250px;
+	    }
+	    @media #{$xs} {
+	    	position: static;
+			margin: 0 15px;
+			max-height: 370px;
+			background-position: center center;
+			width: calc(100% - 30px);
+			margin-bottom: 30px;
+	    }
+	}
+	&-3 {
+	    width: 250px;
+	    height: 300px;
+	    position: absolute;
+	    right: 225px;
+	    bottom: 130px;
+	    @media #{$xxxl} {
+	    	right: 145px;
+			bottom: 90px;
+	    }
+	    @media #{$xxl} {
+	    	right: 105px;
+			bottom: 90px;
+	    }
+	    @media #{$xl} {
+	    	right: 65px;
+			bottom: 60px;
+	    }
+	    @media #{$lg} {
+	    	right: 0;
+			bottom: 0px;
+	    }
+	    @media #{$md} {
+	    	width: 210px;
+			height: 250px;
+			right: 0;
+			bottom: 0;
+	    }
+	    @media #{$xs} {
+			position: static;
+			margin: 0 15px;
+			width: calc(100% - 30px);
+			background-position: center top;
+			height: 370px;
+	    }
+	}
+}
+.lv-banner-content-inner-3.pl-50 {
+	@media #{$lg, $md, $xs} {
+	    padding-left: 0;
+	}
+}
+.lv-banner-content-text-3.pr-235 {
+	@media #{$lg, $md, $xs} {
+		padding-right: 0;
+	}
+}
+.lv-banner-title-3.pl-105 {
+	@media #{$lg, $md, $xs} {
+	    padding-left: 0;
+	}
+}
+.lv-banner-img-3.mr-70 {
+	@media #{$md} {
+		margin-right: 30px;
+	}
+}
+.lv-banner-content-3.pt-275 {
+	@media #{$xs} {
+		padding-top: 120px;
+	}
+}
+.lv-banner-extra-team-member-wrap-3 {
+	@media #{$sm} {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	& > * {
+		@media #{$sm} {
+			flex: 0 0 44%;
+			margin-top: 0px;
+			height: 260px;
+		}
+	}
+}
+.lv-banner-content-3 {
+	position: relative;
+	z-index: 9;
+}
+.lv-banner-extra-team-member-single-thumb-3-3 {
+	@media #{$xs} {
+		margin-top: 70px;
+	}
+}

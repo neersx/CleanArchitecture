@@ -1,0 +1,17 @@
+@mixin border-round {
+	animation-name: border-round;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 0;
+	animation-timing-function: linear;
+}
+@keyframes border-round {
+	0% {
+		transform: rotate(0deg);
+		transform-origin: center;
+	}
+	100% {
+		transform: rotate(360deg);
+		transform-origin: center;
+	}
+}

@@ -1,0 +1,210 @@
+/**
+********************************************
+************* 28.Widget
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+.lv-search-widget {
+	&-form {
+		&-1-6 {
+			position: relative;
+			& input[type="text"] {
+		        border: 0;
+			    height: 50px;
+			    width: 100%;
+			    background-color: var(--clr-body-grey-5);
+			    padding: 0 20px;
+			    font-size: 12px;
+			    color: var(--clr-body-grey-6);
+			    &:focus-visible {
+			    	outline: 0;
+			    }
+			    &:placeholder {
+				    color: var(--clr-body-grey-6);
+			    }
+			}
+			& button[type="submit"], & input[type="submit"] {
+		        position: absolute;
+			    top: 0;
+			    background-color: var(--clr-body-grey-5);
+			    right: 0;
+			    padding: 0 20px;
+			    height: 100%;
+			    &:focus-visible {
+			    	outline: 0;
+			    }
+			    & i {
+				    font-size: 14px;
+				    color: var(--clr-body-grey);
+			    }
+			}
+		}
+	}
+}
+
+// range slider widget
+#lv-slider-range {
+    border: 0;
+    border-radius: 0;
+    height: 1px;
+    background-color: var(--clr-body-grey-7);
+}
+.lv-slider-range {
+	& .ui-slider-handle {
+		width: 10px;
+		left: 15%;
+		height: 10px;
+		border-radius: 50%;
+		border: 0;
+		background-color: var(--clr-body-grey);
+		&:focus-visible {
+			outline: 0;
+		}
+	}
+	& .ui-slider-range.ui-corner-all {
+	    height: 3px;
+	    margin-top: -0.59px;
+	    background-color: var(--clr-body-grey);
+	}
+	& input {
+		color: var(--clr-common-black-2);
+	    border: 0;
+	    font-size: 14px;
+	    &:focus {
+	    	outline: 0;
+	    }
+	}
+}
+// 
+.lv-widget {
+	&-heading {
+		&-1-6 {
+		    font-size: 16px;
+		    text-transform: uppercase;
+		}
+	}
+	&-categories-list {
+		&-1-6 {
+			& ul {
+				& li {
+					list-style: none;
+					&:not(:last-child) {
+					    margin-bottom: 10px;
+					}
+					& a {
+					    font-size: 16px;
+					    color: var(--clr-common-black-3);
+					    text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+	&-top-product {
+		&-img-1-6 {
+		    width: 80px;
+		    height: 100px;
+		    float: left;
+		    margin-right: 20px;
+		    @media #{$xl} {
+		    	margin-right: 13px;
+		    }
+		}
+		&-single-1-6 {
+			overflow: hidden;
+			& .lv-product-box-title-1-6 {
+			    line-height: 26px;
+				margin-bottom: 0;
+				&:hover {
+					color: var(--clr-theme-primary);
+				}
+				@media #{$xl} {
+					font-size: 15px;
+				}
+			}
+		}
+		&-content {
+			&-1-6 {
+				overflow: hidden;
+			    padding-top: 7px;
+			}
+		}
+	}
+	&-filter-color-list-1-6 {
+		& ul {
+			& li {
+				list-style: none;
+				margin-bottom: 6px;
+				& a {
+				    font-size: 16px;
+				    color: var(--clr-common-black-3);
+				    display: inline-block;
+					& span {
+					    width: 14px;
+					    height: 14px;
+					    display: inline-block;
+					    border-radius: 50%;
+					    transform: translateY(2px);
+					    margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+.lv-amount-filter {
+	font-size: 14px;
+    float: right;
+    text-transform: uppercase;
+    color: var(--clr-theme-primary);
+    font-weight: 400;
+}
+.mb-43 {
+	margin-bottom: 43px;
+}
+
+.lv-rating i {
+    font-size: 11px;
+    color: var(--clr-body-grey-6);
+    &.active {
+    	color: var(--clr-theme-primary);
+    }
+}
+.pt-4-px {
+	padding-top: 4px;
+}
+.lv-rating {
+    line-height: 1;
+}
+.tagcloud {
+	& a {
+		font-size: 16px;
+	    color: var(--clr-body-grey-6);
+	    display: inline-block;
+	    position: relative;
+	    padding-right: 5px;
+	    &:hover {
+	    	color: var(--clr-common-black);
+	    }
+	    &::after {
+	    	position: absolute;
+	    	right: 0;
+	    	bottom: 0;
+	    	font-size: 16px;
+	    	content: ",";
+	    }
+	}
+}
+.lv-widget-left-padding-1-6 {
+	@media #{$md, $xs} {
+		padding-left: 0;
+	}
+}
+.lv-blog {
+	&-author {
+		&-widget-img-6 {
+		    height: 300px;
+		    background-position: top center;
+		}
+	}
+}

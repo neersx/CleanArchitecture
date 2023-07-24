@@ -1,0 +1,44 @@
+/**
+********************************************
+************* 18.Hero
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+.lv-hero {
+	&-banner {
+		&-img {
+			&-2 {
+			    max-width: 795.06px;
+			    margin: 0 auto;
+		        margin-top: -43px;
+		        z-index: 3;
+		        position: relative;
+		        @media #{$xs} {
+		        	margin-top: 40px;
+		        }
+			}
+		}
+	}
+	&-flower-2 {
+		position: absolute;
+		z-index: 4;
+	    bottom: -55px;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	&-cloud {
+		position: absolute;
+	    left: 0;
+	    bottom: 73px;
+	}
+}
+
+.lv-banner-content-text-3.pt-75 {
+	@media #{$xs} {
+		padding-top: 40px;
+	}
+}
+.lv-header-bar-2 {
+	position: relative;
+	z-index: 22;
+}

@@ -1,0 +1,215 @@
+/**
+********************************************
+************* 29.Service Details
+********************************************
+*/
+@use '../abstract/fonts' as *;
+@use '../abstract/breakpoints' as *;
+.lv-shop-details {
+	&-product-tabs-1-7 {
+		float: left;
+		max-width: 150px;
+		margin-right: 15px;
+		@media #{$xs} {
+			max-width: 100%;
+			margin-right: 0;
+		}
+		& .nav {
+			@media #{$xs} {
+				grid-gap: 14px;
+				justify-content: space-between;
+			}
+			& > * {
+				@media #{$xs} {
+					flex: 0 0 30%;
+				}
+			}
+		}
+		& button {
+			& img {
+				width: 150px;
+				height: 180px;
+				object-fit: cover;
+				background-color: var(--clr-theme-primary);
+				@media #{$lg} {
+					height: 147px;
+				}
+				@media #{$xs} {
+					height: 110px;
+				}
+			}
+		}
+	}
+	&-img-1-7 {
+		height: 570px;
+		overflow: hidden;
+		background-color: var(--clr-theme-primary);
+		@media #{$lg} {
+			height: 470px;
+		}
+		@media #{$xs} {
+			height: 380px;
+			width: 100%;
+		}
+	}
+	&-price-1-7 {
+	    font-size: 18px;
+	    font-weight: 600;
+	    color: var(--clr-common-black);
+	    display: block;
+        margin-bottom: 7px;
+	}
+	&-rating {
+		& .rating {
+			display: inline-block;
+			margin-right: 6px;
+		}
+		& .review-label {
+		    font-size: 12px;
+		    display: inline-block;
+		}
+	}
+	&-quantity {
+		&-form {
+			&-label-1-7 {
+				display: inline-block;
+			    font-family: $corsiva;
+			    font-size: 20px;
+			    color: var(--clr-body-grey);
+			}
+			&-1-7 {
+				position: relative;
+				& input[type="number"] {
+				    width: 128px;
+				    height: 50px;
+				    text-align: center;
+				    font-size: 18px;
+			        padding: 0 31px;
+				    color: var(--clr-common-black);
+				    border: 1px solid var(--clr-border-light_4);
+				    &:focus-visible {
+				    	outline: none;
+				    }
+				}
+			}
+		}
+		&-plus {
+			position: absolute;
+		    left: 0;
+		    top: 0;
+		    bottom: 0;
+		    display: none;
+		    padding-left: 20px;
+		    padding-right: 10px;
+			& i {
+			    font-size: 13px
+			}
+		}
+		&-minus {
+			position: absolute;
+		    right: 0;
+		    display: none;
+		    top: 0;
+		    bottom: 0;
+		    padding-right: 20px;
+		    padding-left: 10px;
+			& i {
+			    font-size: 13px
+			}
+		}
+	}
+	&-meta {
+		&-1-7 {
+			& ul {
+				& li {
+					list-style: none;
+					font-size: 14px;
+					color: var(--clr-common-black);
+				}
+			}
+		}
+	}
+	&-product {
+		&-tab-buttons-1-7 {
+		    border-bottom: 1px solid var(--clr-body-grey-9);
+		    padding-bottom: 7px;
+		    margin-bottom: 28px;
+			& button {
+				font-size: 14px;
+			    text-transform: uppercase;
+			    color: var(--clr-common-black);
+			    display: inline-block;
+			    padding: 0 15px;
+			    position: relative;
+			    &:hover, &.active {
+			    	&::after {
+			    		opacity: 1;
+			    		visibility: visible;
+			    	}
+			    }
+			    &::after {
+		    	    position: absolute;
+				    left: 0;
+				    bottom: -8px;
+				    width: 100%;
+				    opacity: 0;
+				    visibility: hidden;
+				    height: 1px;
+				    transition: all .3s;
+				    background-color: var(--clr-common-black);
+				    content: "";
+			    }
+			    &:not(:last-child) {
+		    	    margin-right: 28px;
+		    	     @media #{$xs} {
+					    margin-right: 0;
+				    }
+			    }
+			    @media #{$xs} {
+				    margin-bottom: 16px;
+			    }
+			    @media #{$sm} {
+				    margin-bottom: 0;
+			    }
+			}
+		}
+	}
+}
+.lv-product {
+	&-stock-1-7 {
+	    display: inline-block;
+	    height: 25px;
+	    line-height: 22px;
+	    border: 1px solid var(--clr-border-light_3);
+	    font-size: 14px;
+	    padding: 0 12px;
+	}
+	&-stock-title-1-7 {
+		font-size: 50px;
+	    margin-bottom: 0;
+	    @media #{$xs} {
+		    font-size: 34px;
+			margin-bottom: 9px;
+	    }
+	}
+}
+.mr-17 {
+	margin-right: 17px;
+}
+.mb-37 {
+	margin-bottom: 37px;
+}
+.lv-has-cart-margin-1-7 {
+	margin-left: 15px;
+    transform: translateY(-2px);
+    @media #{$xs} {
+		margin-left: 0;
+		transform: translateY(0);
+		margin-top: 30px;
+    }
+}
+.lv-shop-details-right-content-space-1-7 {
+	@media #{$lg} {
+		padding-left: 30px;
+	}
+}

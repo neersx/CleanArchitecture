@@ -1,0 +1,269 @@
+
+/***************************************************/
+/************** iPad Pro 1024px *****************/
+/***************************************************/
+@media (max-width: 1024px){
+	.slider-area .carousel-caption {
+	    padding-bottom: 150px;
+	}
+	.couple-hand img{
+		margin-left: 85px;
+    	margin-top: 60px;
+	}
+	.promoInfo b{
+		font-size: 28px;
+	}
+	.blog-content {
+    	width: 220px;
+    }
+    .post-controller .pagination>li>a, 
+    .pagination>li>span{
+		margin-left: 2px;
+    }
+    .sidebarSearch .form-control{
+    	width: 228px;
+    }
+}
+
+/***************************************************/
+/************** iPad 768px *****************/
+/***************************************************/
+@media (max-width: 768px) {
+	.title-desc h2:after{
+		top: 61px;
+	}
+	.title-desc h2:before{
+		top: 64px;
+	}
+	.stuff-left.right h2{
+		margin-top: 20px;
+	}
+	.dinner-menu h2:after{
+		top: 49px;
+	}
+	.dinner-menu h2:before{
+		top: 52px;
+	}
+	.slider-area .carousel-caption {
+	    padding-bottom: 57px;
+	}
+	.slider-area h1 {
+    	font-size: 45px;
+    }
+    .slider-area h2 {
+    	font-size: 35px;
+    }
+    .count-down-left{
+    	margin-left: -25px;
+    	margin-right: -25px;
+    }
+    #triangle-bottomleft{
+    	display: none;    	
+    }
+    .couple-hand img{
+    	display: block;
+    	margin: 0 auto;
+    	position: inherit;
+    }
+    .single-about{
+    	text-align: center;
+    }
+    .single-about:first-child{
+    	margin-top: 70px;
+    }
+    .bride-groom{
+    	width: 470px;
+    	margin-top: 100px;
+    	margin-bottom: 100px;
+    }
+    .our-single-service img{
+    	float: none;
+    	display: block;
+    	margin: 0 auto;
+    }
+    .single-service-desc{
+    	margin-left: inherit;
+    	text-align: center;    	
+    }
+    .our-single-service h3:before{
+    	top: 37px;
+    	left: calc(50% - 108px);
+    }
+    .bride-friends .single-friend {
+	    margin-bottom: 40px;
+	}
+	 .bride-friends.accent .single-friend {
+	    margin-bottom: 0px;
+	}
+	.single-blog{
+		margin: 10px 0;
+	}
+	.blog-content {
+	    width: 400px;
+	}
+	.carousel-indicators {
+	    display: none;
+	}
+	.single-contact{
+		margin-bottom: 20px;
+	}
+
+}
+
+/***************************************************/
+/************** iPhone6 Plus 414px *****************/
+/***************************************************/
+@media (max-width: 414px) {
+	.title-desc h2{
+		font-size: 30px;
+	}
+	.title-desc p {
+	    font-size: 12px;
+	    line-height: 20px;
+	    padding-bottom: 20px;
+	}
+	.title-desc h2:before {
+	    top: 53px;
+	}
+	.title-desc h2:after {
+	    top: 50px;
+	}
+	.section-padding{
+		padding: 25px 0;
+	}
+	p{
+		margin-top: 12px;
+		line-height: 23px;
+    	font-size: 12px;
+	}
+	h2{
+		font-size: 24px;
+	}
+	.navbar-default .navbar-toggle {
+	    border-color: inherit;
+	}
+	.navbar-toggle,
+	.navbar-default .navbar-toggle:focus{
+		background-color: #FF6D6D;
+		border: 1px solid #FF6D6D;
+	}
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+	}
+	.slider-area{
+		padding-top: 90px;
+	}
+	.slider-area .carousel-caption {
+	    padding-bottom: 40px;
+	}
+	.slider-area h1 {
+	    font-size: 30px;
+	    line-height: 30px;
+	}
+	.slider-area h2 {
+	    font-size: 20px;
+	    line-height: 5px;
+	}
+	.slider-area .fa-chevron-left, 
+	.slider-area .fa-chevron-right{
+		width: 35px;
+		height: 35px;
+		padding-top: 8px;
+	}
+	.slider-area .carousel-indicators{
+		display: none;
+	}
+	.count-down-left p:first-child{
+		font-size: 14px;
+	}
+	.count-down-left p:last-child{
+		font-size: 20px;
+		margin-top: 2px;
+	}
+	.count-down .countdown-amount {
+		font-size: 25px;
+		font-weight: 300;
+		line-height: 0.5;
+	}
+	.count-down .countdown-period {
+		font-size: 13px;
+		line-height: 0.5;
+		margin: 15px 0 0;
+		letter-spacing: 1px;
+	}
+	.single-about h4:before{
+		left: calc(50% - 20px);
+	}
+	.bride-groom{
+		width: 350px;
+	}
+	.our-single-service h3:before {
+	    left: calc(50% - 60px);
+	}
+	.dinner-menu img {
+    	margin-top: 15px;
+	}
+	.single-friend h2:before{
+		top: 35px;
+	}
+	.blog-content {
+	    width: 330px;
+	}
+	.page-bg-image-content {
+	    padding-top: 40%;
+	}
+	.single-page-content .breadcrumb{
+		width: 100%;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+	.post-controller .pagination{
+		display: block;
+		text-align: center;
+		float: none;
+	}
+	.post-controller .pagination li{
+		display: inline-block;
+	}
+	.post-content blockquote.block2:before,
+	.post-content blockquote.block2:after{
+		font-size: 20px;
+	}
+	.author-intro img{
+		margin-top: 23px;
+	}
+	.sidebarSearch .form-control{
+		width: 256px;
+	    margin: 0 auto;
+	    padding: 10px;
+	}
+	.sidebarSearch button{
+		width: 256px;
+	    margin: 0 auto;
+	    display: block;	    
+	}
+}
+
+/***************************************************/
+/************** iPhone5 320px *****************/
+/***************************************************/
+@media (max-width: 320px){
+	.bride-groom {
+	    width: 250px;
+	}
+	.blog-content {
+	    width: 250px;
+	}
+}
+
+/***************************************************/
+/************** Galaxy S5 360px *****************/
+/***************************************************/
+@media (max-width: 360px){
+	.bride-groom {
+	    width: 325px;
+	}
+	.blog-content {
+	    width: 250px;
+	}
+}

@@ -1,0 +1,162 @@
+/**
+********************************************
+************* 24.Experience
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+@use '../abstract/animation' as *;
+.has-experience-before-overlay-1-1 {
+	position: relative;
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: calc(100% - 120px);
+		content: "";
+		background-color: var(--clr-border-light_2);
+	}
+	& > * {
+		position: relative;
+		z-index: 3;
+	}
+}
+.lv-experience-progress {
+	&-label {
+		&-1-1 {
+			font-size: 12px;
+		    color: var(--clr-common-black);
+		    text-transform: uppercase;
+		    margin-bottom: 4px;
+		    display: inline-block;
+		}
+	}
+	&-single {
+		&-1-1 {
+			margin-bottom: 17px;
+		    & .progress {
+		    	height: 1px;
+			    border-radius: 0;
+			    background-color: #ddd;
+		        overflow: visible;
+		        & .progress-bar {
+		        	overflow: visible;
+				    height: 3px;
+				    position: static;
+				    transform: translateY(-3px);
+				    background-color: var(--clr-common-black);
+				    & span {
+				    	position: absolute;
+					    right: 0;
+					    top: -28px;
+					    color: var(--clr-common-black);
+					    font-size: 12px;
+				    }
+		        }
+		    }
+		}
+	}
+}
+.lv-experience-right-img-1-1 {
+	min-height: 633px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    justify-content: flex-end;
+    @media #{$xs} {
+    	padding-bottom: 40px;
+    	min-height: 500px;
+    }
+}
+.lv-experience {
+	&-play {
+		&-btn {
+			&-1-1 {
+				& a {
+					display: inline-block;
+					width: 130px;
+					line-height: 130px;
+					height: 130px;
+					background: var(--clr-common-white);
+					text-align: center;
+					border-radius: 50%;
+					position: relative;
+					font-size: 21px;
+					color: var(--clr-common-black);
+					@media #{$xs} {
+						width: 90px;
+						line-height: 90px;
+						height: 90px;
+					}
+					&::after {
+						position: absolute;
+					    left: 15%;
+    					top: 15%;
+					    content: "";
+					    display: inline-block;
+					    width: 90px;
+					    height: 90px;
+					    border: 2px dashed var(--clr-common-black);
+					    border-radius: 50%;
+					    @include border-round;
+					    @media #{$xs} {
+					    	left: 11%;
+							top: 11%;
+							width: 70px;
+							height: 70px;
+					    }
+					}
+				}
+			}
+		}
+		&-label-1-1 {
+			    font-size: 16px;
+			    color: #fff;
+			    clear: both;
+			    display: inline-block;
+			    padding-left: 20px;
+			    text-transform: uppercase;
+			    line-height: 1.2;
+		}
+	}
+}
+.lv-experience-space-reverce-1-1 {
+    margin-left: -63px;
+    @media #{$md} {
+    	margin-left: 50px;
+    }
+    @media #{$xs} {
+    	margin-left: 20px;
+    }
+}
+.mt-8 {
+	margin-top: 8px;
+}
+.lv-experience-left-1-1.pr-70 {
+	@media #{$xl} {
+		padding-right: 60px;
+	}
+	@media #{$md, $xs} {
+		padding-right: 0;
+	}
+}
+.lv-experience-left-1-1 {
+	& p {
+		& br {
+			@media #{$xs} {
+				display: none;
+			}
+		}
+	}
+}
+.lv-experience-right-1-1.pl-70 {
+	@media #{$lg} {
+		padding-left: 30px;
+	}
+	@media #{$md, $xs} {
+		padding-left: 0;
+	}
+}
+.lv-about-pata-img-wrap.lv-about-body-pata .lv-about-pata-parent{
+	position: fixed;
+}

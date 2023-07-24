@@ -1,0 +1,162 @@
+/**
+********************************************
+************* 16.Footer
+********************************************
+*/
+@use '../abstract/mixins' as *;
+@use '../abstract/breakpoints' as *;
+.lv-footer {
+	&-border {
+		&-top {
+			border-top: 1px solid var(--clr-border-light_2);
+		}
+	}
+	&-title {
+		font-size: 18px;
+		margin-bottom: 12px;
+		text-transform: uppercase;
+	}
+	&-social {
+		&-link {
+			padding-bottom: 8px;
+			& a {
+				font-weight: 300;
+				font-size: 12px;
+				text-transform: uppercase;
+				display: inline-block;
+				margin-right: 16px;
+				position: relative;
+				&:last-child {
+					margin-right: 0;
+				}
+				&:not(:first-child)::after {
+					width: 4px;
+					height: 4px;
+					background: var(--clr-body-grey);
+					display: inline-block;
+					border-radius: 50%;
+					content: "";
+					position: absolute;
+					left: -12px;
+					top: 13px;
+				}
+				&:hover {
+					color: var(--clr-common-black);
+				}
+			}
+		}
+	}
+	&-subscribe {
+		&-form {
+			position: relative;
+			& input {
+				width: 100%;
+				border: 0;
+				border-bottom: 1px solid var(--clr-body-grey);
+				font-size: 12px;
+				color: var(--clr-body-grey);
+				text-transform: uppercase;
+				@include placeholder {
+					text-transform: uppercase;
+					font-size: 12px;
+					color: var(--clr-body-grey);
+				}
+				&:focus {
+					outline: none;
+					border-bottom-color: var(--clr-common-black);
+				}
+			}
+			& button[type="submit"], & input[type="submit"] {
+				position: absolute;
+				right: 0;
+				bottom: -1px;
+				font-size: 16px;
+				@media #{$xs} {
+					right: 20px;
+				}
+				
+			}
+		}
+	}
+	&-link {
+		&-logo {
+			max-width: 128.37px;
+			&-wrap {
+				display: flex;
+				justify-content: space-between;
+				padding: 0 50px;
+				align-items: center;
+			}
+		}
+		&-menu {
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+	&-touch-widget {
+		&-links {
+			padding-top: 8px;
+			& a, & span {
+				font-size: 12px;
+				font-weight: 300;
+				display: block;
+				line-height: 1.9;
+			}
+		}
+	}
+	&-copyright {
+		padding: 13px 0;
+		padding-top: 10px;
+		& p {
+			margin-bottom: 0;
+			font-size: 12px;
+			color: var(--clr-common-white);
+			text-transform: uppercase;
+		}
+	}
+}
+.black-bg {
+	background-color: var(--clr-common-black);
+}
+@media #{$lg, $md, $xs} {
+	.footer-widget.text-center.pl-55.pr-55 {
+		padding: 0;
+	}
+}
+.lv-footer-widget-wrap {
+	& .row {
+		& > *:not(:last-child) {
+			& .footer-widget {
+				position: relative;
+				&::after {
+					position: absolute;
+					right: -5px;
+					content: "";
+					top: 50%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 150px;
+					background-color: var(--clr-border-light);
+					@media #{$xs} {
+						display: none;
+					}
+					@media #{$lg} {
+						right: -38px;
+					}
+					@media #{$md} {
+						right: -44px;
+					}
+				}
+			}
+			&:nth-child(2) {
+				& .footer-widget {
+					&::after {
+						@media #{$md} {
+							display: none
+						}
+					}
+				}
+			}
+		}	
+	}
+}

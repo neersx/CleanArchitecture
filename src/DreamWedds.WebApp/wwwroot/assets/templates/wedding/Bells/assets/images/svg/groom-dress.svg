@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="253.327" height="339.1" viewBox="0 0 253.327 339.1">
+  <defs>
+    <filter id="Path_493" x="0" y="0" width="253.327" height="339.1" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="groom-dress" transform="translate(-10.183 2.5)">
+    <g id="Group_22" data-name="Group 22" transform="translate(12.683)">
+      <path id="Path_492" data-name="Path 492" d="M59.409,125.882,75.721,34.449,62.635,16.391l6.422-12.88H49.765L56.2,16.391,43.093,34.449Z" transform="translate(59.739 8.362)"/>
+      <g transform="matrix(1, 0, 0, 1, -2.5, -2.5)" filter="url(#Path_493)">
+        <path id="Path_493-2" data-name="Path 493" d="M225.239,293.074H251.01l-6.432-109.521-12.907-144.9L170.489,12.89,164.047.01l-6.435,25.761L131.835,173.905,106.074,25.761,99.622,0,93.187,12.88,32,38.637,19.115,183.553,12.683,293.074H38.447L61.955,150.941l8.684,32.595L44.868,291.9l74.072,32.2,12.88-63.38,12.874,63.38,74.086-32.2L193,183.536l8.691-32.595Zm-25.5-200.9-26.176,3.628,17.31-21.344,8.866,6.851Z" transform="translate(-10.18 2.5)" fill="#939985"/>
+      </g>
+    </g>
+  </g>
+</svg>

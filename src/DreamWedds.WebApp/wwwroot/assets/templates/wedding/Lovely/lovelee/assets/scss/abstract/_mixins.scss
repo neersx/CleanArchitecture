@@ -1,0 +1,343 @@
+	//backgroud 
+    @mixin background($position: center,$size: cover,$repeat: no-repeat) {
+        background: {
+            position: $position;
+            repeat: $repeat;
+            size: $size;
+        }
+    }
+      
+    //transition
+    @mixin transition($time) {
+        -webkit-transition: all $time ease-out 0s;
+        -moz-transition: all $time ease-out 0s;
+        -ms-transition: all $time ease-out 0s;
+        -o-transition: all $time ease-out 0s;
+        transition: all $time ease-out 0s;
+    }
+    
+    // transform
+    @mixin transform($transforms) {
+        -webkit-transform: $transforms;
+        -moz-transform: $transforms;
+        -ms-transform: $transforms;
+        transform: $transforms;
+    }
+    
+    //border
+    @mixin border-radius($man) {
+    -webkit-border-radius: $man;
+    -moz-border-radius: $man;
+    border-radius: $man;
+    }
+    
+
+    // Flexbox display
+    @mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    }
+    
+    // Box shadows
+    @mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;       
+            box-shadow: $shadow;
+    }
+    
+    //before-left-top
+    @mixin before-left-top($width, $height, $background, $left, $top) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            top: $top;
+        }	
+    }
+    
+    //before-left-bottom
+    @mixin before-left-bottom($width, $height, $background, $left, $bottom) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            bottom: $bottom;
+        }	
+    }
+    
+    //before-right-top
+    @mixin before-right-bottom($width, $height, $background, $right, $bottom) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            bottom: $bottom;
+        }	
+    }
+    
+    //before-right-bottom
+    @mixin before-right-top($width, $height, $background, $right, $top) {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            top: $top;
+        }	
+    }
+    
+    //after-left-top
+    @mixin after-left-top($width, $height, $background, $left, $top) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            top: $top;
+        }	
+    }
+    
+    //after-left-bottom
+    @mixin after-left-bottom($width, $height, $background, $left, $bottom) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            left: $left;
+            bottom: $bottom;
+        }	
+    }
+    
+    //after-right-top
+    @mixin after-right-bottom($width, $height, $background, $right, $bottom) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            bottom: $bottom;
+        }	
+    }
+    
+    //after-right-bottom
+    @mixin after-right-top($width, $height, $background, $right, $top) {
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: $width;
+            height: $height;
+            background: $background;
+            right: $right;
+            top: $top;
+        }	
+    }
+    // centered text
+
+    @mixin centered_text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @mixin bg_img_cliping_normal {
+        transform: scale(1);
+        transition: all .3s;
+    }
+    @mixin bg_img_cliping_hover {
+        transform: scale(1.1);
+    }
+
+
+    @mixin placeholder {
+        &::-webkit-input-placeholder {
+            @content;
+        }
+        &:-moz-placeholder {
+            @content;
+        }
+        &::-moz-placeholder {
+            @content;
+        }
+        &:-ms-input-placeholder {
+            @content;
+        }
+    }
+    @mixin strockSvg($color: --clr-common-white) {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        fill: none;
+        stroke: var($color);
+        -webkit-transition: all .8s cubic-bezier(.45,0,.14,1.03),stroke 10ms ease-out;
+        -o-transition: all .8s cubic-bezier(.45,0,.14,1.03),stroke 10ms ease-out;
+        transition: all .8s cubic-bezier(.45,0,.14,1.03),stroke 10ms ease-out;
+          transition-duration: 0.8s, 10ms;
+        -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        -webkit-transition-duration: 1.1s;
+        outline: 1px solid #ffffff7d;
+        border-radius: 50%;
+        outline-offset: -10px;
+        -o-transition-duration: 1.1s;
+        transition-duration: 1.1s;
+        & circle {
+            fill: none;
+            stroke: var($color);
+            stroke-dasharray: 950;
+            stroke-dashoffset: 950;
+            stroke-width: 1;
+            -webkit-transition: all .8s cubic-bezier(.45,0,.14,1.03);
+            -o-transition: all .8s cubic-bezier(.45,0,.14,1.03);
+            transition: all .8s cubic-bezier(.45,0,.14,1.03);
+            transition-duration: 0.8s;
+            -webkit-transition-duration: 1.1s;
+            -o-transition-duration: 1.1s;
+            transition-duration: 1.1s;
+        }
+    }
+    @mixin hoverStrockSvg {
+        -webkit-transform: rotate(-45deg) translateZ(0);
+          transform: rotate(-45deg) translateZ(0);
+          & circle {
+            stroke-dashoffset: 10;
+          }
+    }
+    @mixin lvSuduHorizontalLine($color: --clr-common-white) {
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            left: -1px;
+            display: block;
+            width: calc(100% + 2px);
+            height: 1px;
+            background-color: var($color);
+            -webkit-transition: .36s ease-out,background-color 1ms;
+            -o-transition: .36s ease-out,background-color 1ms;
+            transition: .36s ease-out,background-color 1ms;
+              transition-delay: 0s, 0s;
+            -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            transform: scaleX(0);
+        }
+        &::before {
+            top: -1px;
+            -webkit-transform-origin: left;
+            -ms-transform-origin: left;
+            transform-origin: left;
+            -webkit-transition-delay: .12s;
+            -o-transition-delay: .12s;
+            transition-delay: .12s;
+        }
+        &::after {
+            bottom: -1px;
+            -webkit-transform-origin: left;
+            -ms-transform-origin: left;
+            transform-origin: left;
+            -webkit-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+    }
+    @mixin lvSuduHoverHorizontalLine {
+        &::before, &::after {
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+        &::before {
+            -webkit-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        &::after {
+            -webkit-transition-delay: .12s;
+            -o-transition-delay: .12s;
+            transition-delay: .12s;
+        }
+    }
+    @mixin suduVerticalLine($color: --clr-common-white) {
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            display: block;
+            height: 100%;
+            width: 1px;
+            background-color: var($color);
+            -webkit-transition: .12s ease-out,background-color 1ms;
+            -o-transition: .12s ease-out,background-color 1ms;
+            transition: .12s ease-out,background-color 1ms;
+              transition-delay: 0s, 0s;
+            -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            transform: scaleY(0);
+        }
+        &::before {
+            right: -1px;
+            -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+            transform-origin: top;
+            -webkit-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        &::after {
+            left: -1px;
+            -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+            transform-origin: top;
+            -webkit-transition-delay: .36s;
+            -o-transition-delay: .36s;
+            transition-delay: .36s;
+        }
+    }
+    @mixin suduHoverVerticalLine {
+        &::after, &::before {
+            -webkit-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+            transform: scaleY(1);
+        }
+        &::after {
+            -webkit-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        &::before {
+            -webkit-transition-delay: .36s;
+            -o-transition-delay: .36s;
+            transition-delay: .36s;
+        }
+    }

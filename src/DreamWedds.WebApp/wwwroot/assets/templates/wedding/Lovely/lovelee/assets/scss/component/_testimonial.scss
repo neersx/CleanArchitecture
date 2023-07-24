@@ -1,0 +1,137 @@
+/**
+********************************************
+************* 11.Testimonial
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+@use '../abstract/fonts' as *;
+.testimonial-bg-settings {
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.testimonial-area-spacing {
+	margin-top: -37px;
+}
+.lv-testimonial {
+	&-img {
+	    width: 130px;
+	    background: var(--clr-theme-primary);
+	    border-radius: 50%;
+	    overflow: hidden;
+	    height: 130px;
+	    margin: 0 auto;
+	    margin-bottom: 25px;
+	    & img {
+	    	object-fit: cover;
+	    	object-position: center;
+	    }
+	}
+	&-box {
+		padding: 0 40px;
+		padding-bottom: 55px;
+	    text-align: center;
+	    @media #{$xs} {
+	    	padding: 0;
+	    }
+	}
+	&-bg-img-pos {
+	    max-width: 224.17px;
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	    top: -9px;;
+	}
+	&-content {
+		position: relative;
+	}
+	&-author {
+		&-name {
+		    font-size: 24px;
+		    margin-bottom: 0;
+		}
+		&-date {
+			font-size: 14px;
+		    font-weight: 300;
+		}
+	}
+	&-pagination-nav-wrap {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+		& .testimonial-paginations-2 {
+		    display: inline-block;
+		}
+		& .swiper-pagination-bullet {
+	        width: auto;
+		    display: inline-block;
+		    height: auto;
+		    background: none;
+		    border-radius: 0;
+		    opacity: 1;
+		    font-size: 12px;
+		    margin: 0 8px;
+		    font-family: $prata;
+		    position: relative;
+		    &::after {
+		    	content: "";
+		    	position: absolute;
+		    }
+		    &-active {
+		    	font-size: 18px;
+		    	color: var(--clr-common-black);
+		    }
+		}
+		& .swiper-button-next-2, & .swiper-button-prev-2 {
+			display: inline-block;
+			line-height: 1;
+		    transform: translateY(-2px);
+			& img {
+				max-width: 50.55px;
+			}
+		}
+	}
+}
+.testimonial-shape-path {
+	&-image-wrap {
+	    & .testimonial-shape-path-image {
+	    	position: absolute;
+		    right: 30px;
+		    bottom: -50px;
+		    max-width: 169.63px;
+		    animation-name: toTopFlower;
+		    animation-duration: 3s;
+		    @media #{$xs} {
+		    	bottom: -100px;
+				max-width: 99.63px;
+		    }
+	    }
+	}
+}
+
+
+// common pagination
+.lv-common-pagination-next-nav {
+    display: inline-block;
+    line-height: 1;
+    transform: translateY(-2px);
+}
+
+.lv-common-pagination-dots .swiper-pagination-bullet {
+    display: inline-block;
+}
+
+.lv-common-pagination-prev-nav {
+    display: inline-block;
+    line-height: 1;
+    transform: translateY(-2px);
+}
+.lv-common-pagination-prev-nav img {
+    max-width: 50.55px;
+}
+.lv-common-pagination-next-nav img {
+    max-width: 50.55px;
+}
+.lv-common-pagination > *{
+	cursor: pointer;
+}

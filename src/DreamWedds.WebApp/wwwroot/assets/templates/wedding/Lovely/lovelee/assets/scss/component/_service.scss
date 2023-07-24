@@ -1,0 +1,66 @@
+/**
+********************************************
+************* 8.Service
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+.lv-service-box {
+    padding: 0 20px;
+    position: relative;
+	&::after {
+		width: 1px;
+		height: 220px;
+		background-color: var(--clr-border-light);
+	    right: -14px;
+		top: 50%;
+		position: absolute;
+		transform: translateY(-50%);
+		content: "";
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	&.no-after::after {
+		display: none
+	}
+	&-icon {
+		margin-bottom: 25px;
+		& i {
+			display: inline-block;
+		    font-size: 54px;
+		}
+	}
+	&-content {
+		&-title {
+			font-size: 22px;
+		    margin-bottom: 18px;
+		    &:hover {
+		    	color: var(--clr-common-black);
+		    }
+		}
+	}
+	&:hover {
+		& .lv-service-box-icon i{
+		    -webkit-animation: blo-danceBottom 400ms ease-in-out;
+		    -webkit-animation-delay: .35s;
+		    animation-delay: .35s;
+		}
+	}
+}
+.lv-service-area .row > :nth-child(2) .lv-service-box::after {
+	@media #{$md, $xs} {
+		opacity: 0;
+	}
+}
+.gallery-grid .lv-section-title-wrap p br {
+	@media #{$lg, $xs} {
+		display: none;
+	}
+}
+.no-after::after {
+	display: none;
+}
+.lv-service-box-space-1-2 {
+    padding: 0 0;
+    padding-right: 10px;
+}

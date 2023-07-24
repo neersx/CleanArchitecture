@@ -1,0 +1,600 @@
+@use './colors'as *;
+@use './fonts'as *;
+@use './mixins'as *;
+@use './colors'as *;
+@use './breakpoints'as *;
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Lovelee – Wedding & Planner HTML Template
+    Author: BDevs
+    Support: nasir.chalo@gmail.com
+    Description: Lovelee – Wedding & Planner HTML Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    1.Theme Default CSS
+    2.Button
+    3.Header
+    4.Slider
+    5.About
+    6.Section Title
+    7.Banner
+    8.Service
+    9.Gallery
+    10.Counter
+    11.Testimonial
+    12.Photography
+    13.Brand
+    14.Blog
+    15.Instagram
+    16.Footer
+    17.Sidebar
+    18.Hero
+    19.Message
+    20.Event
+    21.Pricing
+    22.Breadcrumb
+    23.Explore
+    24.Experience
+    25.Portfolio
+    26.Contact
+    27.Product
+    28.Widget
+    29.Service Details
+    30.Team
+
+
+
+**********************************************/
+/*
+
+/**
+********************************************
+************* 1.Theme Default CSS
+********************************************
+*/
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ body {
+	font-family: $muli;
+	font-size: 15px;
+	font-weight: normal;
+	color: var(--clr-body-text);
+	line-height: 28px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+
+
+a,
+.btn,
+button,
+span,
+p,
+i,
+input,
+select,
+textarea,
+li,
+img,
+svg path,
+*::after,
+*::before,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include transition(.3s);
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover
+{
+	color: inherit;
+	text-decoration: none;
+}
+a,
+button {
+	color: inherit;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+button:hover{
+	cursor: pointer;
+}
+button:focus{outline: 0; border:0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $prata;
+	color: var(--clr-heading-primary);
+	margin-top: 0px;
+	font-weight: 500;
+	line-height: 1.13;
+	@include transition(.3s);
+}
+
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 16px;
+}
+h6 {
+	font-size: 14px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: $muli;
+	font-size: 16px;
+	font-weight: 300;
+	color: var(--clr-body-text);
+	margin-bottom: 15px;
+	line-height: 26px;
+}
+
+*::-moz-selection {
+	background: var(--clr-theme-primary);
+	color: var(--clr-common-white);
+	text-shadow: none;
+}
+::-moz-selection {
+	background: var(--clr-theme-primary);
+	color:var(--clr-common-white);
+	text-shadow: none;
+}
+::selection {
+	background: var(--clr-theme-primary);
+	color: var(--clr-common-white);
+	text-shadow: none;
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+*::-moz-placeholder {
+	color: var(--clr-theme-black);
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: var(--clr-theme-black);
+	font-size: 14px;
+	opacity: 1;
+}
+
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+/*--
+    - Background color
+-----------------------------------------*/
+.grey-bg {
+	background: var(--clr-common-gray);
+}
+
+.theme-bg {
+	background-color:var(--clr-theme-primary);
+}
+
+.white-bg {
+	background:var(--clr-common-white);
+}
+.black-bg {
+	background: var(--clr-theme-black);
+}
+
+.footer-bg {
+	background: var(--clr-footer-bg);
+}
+
+/*--
+    - color
+-----------------------------------------*/
+
+.white-color {
+	color: var(--clr-common-white);
+}
+
+.theme-color {
+	color: var(--clr-theme-primary) !important;
+}
+.black-color {
+	color: var(--clr-theme-black);
+}
+
+
+// spacing 
+
+
+// overlay
+
+ .body-overlay{
+    background-color: rgba($color: #000000, $alpha: .5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(.3s);
+
+	&:hover{
+		cursor: pointer;
+	}
+}
+.body-overlay.opened{
+	opacity: 1;
+    visibility: visible;
+}
+
+
+// progress wrap
+
+.progress-wrap{
+	@media #{$xs}{
+		right: 15px;
+		bottom: 15px;
+	}
+}
+
+/* link btn */
+
+.link-btn{
+	position: relative;
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--clr-theme-primary);
+	text-transform: uppercase;
+	padding-right: 15px;
+	& i{
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+		transition: all ease .2s;
+		-webkit-transition: all ease .2s;
+		-moz-transition: all ease .2s;
+		-ms-transition: all ease .2s;
+		-o-transition: all ease .2s;
+		&:first-child{
+			left: -100%;
+			visibility: hidden;
+			opacity: 0;
+	
+		}
+		&:last-child{
+			right: 0;
+		}
+	}
+	&:hover{
+		color: var(--clr-theme-black);
+		& i:first-child{
+			left: 0;
+			visibility: visible;
+			opacity: 1;
+		}
+		& i:last-child{
+			right: -100%;
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+}
+
+.link-btn-2{
+	position: relative;
+	font-size: 14px;
+	color: var(--clr-theme-primary);
+	font-weight: 500;
+	padding-right: 22px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: $prata;
+	& i{
+		position: absolute;
+		top: 45%;
+		@include transform(translateY(-50%));
+		transition: all ease .2s;
+		-webkit-transition: all ease .2s;
+		-moz-transition: all ease .2s;
+		-ms-transition: all ease .2s;
+		-o-transition: all ease .2s;
+		font-size: 12px;
+		&:first-child{
+			right: 10%;
+			visibility: hidden;
+			opacity: 0;
+		}
+		&:last-child{
+			right: 0;
+		}
+	}
+	&:hover{
+		color: var(--clr-theme-primary);
+		& i{
+			&:first-child{
+				right: 0;
+				visibility: visible;
+				opacity: 1;
+			}
+			&:last-child{
+				right: -10%;
+				visibility: hidden;
+				opacity: 0;
+			}
+		}
+	}
+	&.pink{
+		color: var(--clr-theme-primary);
+		&:hover{
+			color: var(--clr-theme-primary);
+		}
+	}
+}
+
+
+
+/* pulse btn */
+
+.pulse-btn{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	line-height: 84px;
+	text-align: center;
+	background-color: var(--clr-common-white);
+	@include border-radius(50%);
+	color: var(--clr-theme-primary);
+	animation: pulse 2s infinite;
+	&:hover{
+		background-color: var(--clr-theme-primary);
+		color: var(--clr-common-white);
+	}
+	& i{
+		padding-left: 2px;
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+	  -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 45px rgba(255,255,255, 0);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+	}
+}
+@keyframes pulse {
+0% {
+	-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+	box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+}
+70% {
+	-moz-box-shadow: 0 0 0 45px rgba(255,255,255, 0);
+	box-shadow: 0 0 0 45px rgba(255,255,255, 0);
+}
+100% {
+	-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+	box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+}
+}
+// bootstrap customization
+.row {
+	--bs-gutter-x: 30px;
+	&.g-70 {
+		--bs-gutter-x: 70px;
+		@media #{$xs} {
+			--bs-gutter-x: 0;
+		}
+	}
+	&.g-10 {
+		--bs-gutter-x: 10px;
+	}
+	&.g-15 {
+		--bs-gutter-x: 15px;
+	}
+}
+.row.g-0 {
+	--bs-gutter-x: 0;
+}
+@media (min-width: 1400px) {
+	.container-2 {
+		max-width: 1815px;
+	}
+	.container {
+		padding: 0 15px;
+	}
+}
+/* <<<<<<<    Declaration   >>>>>>>>> */
+:root {
+    /**
+    @color declaration
+    */
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+}
+.p-rel {
+	position: relative;
+}
+.pb-335 {
+	padding-bottom: 335px;
+}
+.pb-615 {
+	padding-bottom: 615px;
+}
+img {
+	max-width: 100%;
+}
+.lv-bg-opacity {
+	position: relative;
+	&::after {
+		position: absolute;
+		left: 0;
+		top: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: var(--clr-common-black);
+	}
+	& .container {
+		position: relative;
+		z-index: 3
+	}
+	&.lv-opacity-5 {
+		&::after {
+			opacity: .5;
+		}
+	}
+}
+
+.lv-body-content {
+    padding: 100px 335px;
+    @media #{$xxl} {
+    	padding: 65px 65px;
+    }
+    @media #{$xl} {
+    	padding: 65px 70px;
+    }
+    @media #{$lg} {
+    	padding: 70px 29px;
+    }
+    @media #{$md} {
+    	padding: 30px 30px;
+    }
+    @media #{$xs} {
+		padding: 15px 15px;
+    }
+}
+.mb-12 {
+	margin-bottom: 12px;
+}
+.mb-5-px {
+	margin-bottom: 5px;
+}
+.pr-52 {
+	padding-right: 52px;
+}
+.pl-52 {
+	padding-left: 52px;
+}
+.pb-13 {
+	padding-bottom: 13px;
+}
+.bg-top-center {
+	background-position: center top !important;
+}
+.mb-43 {
+	margin-bottom: 43px;
+}
+.pt-240 {
+	padding-top: 240px;
+}
+.lv-brand-negative-space-2 {
+    margin-top: -123px;
+}
+@media (min-width: 1600px) and (max-width: 1800px) {
+	.lv-body-content {
+		padding: 100px 145px;
+	}
+}
+.bg-attached {
+	background-attachment: fixed;
+}
+.jarallax-img {
+	transition: all 0s;
+}
+.obj-cover {
+	object-fit: cover;
+}

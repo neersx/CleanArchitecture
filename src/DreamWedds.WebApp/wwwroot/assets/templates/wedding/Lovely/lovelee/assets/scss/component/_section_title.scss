@@ -1,0 +1,53 @@
+/**
+********************************************
+************* 6.Section Title
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+
+.lv-section-title {
+	font-size: 50px;
+    line-height: 1.3;
+    margin-bottom: 0;
+    & br {
+        @media #{$md, $xs} {
+            display: none;
+        }
+    }
+    @media #{$xl} {
+        font-size: 49px;
+    }
+    @media #{$lg} {
+      font-size: 45px;
+    }
+    @media #{$xs} {
+        font-size: 30px;
+    }
+    &.mb-10 {
+    	margin-bottom: 10px;
+    }
+    &.mb-45 {
+    	margin-bottom: 45px;
+    }
+}
+.lv-section {
+    &-subtitle-2 {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--clr-theme-primary);
+    }
+    &-title-2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        @media #{$xs} {
+            font-size: 25px;
+            line-height: 1.3;
+        }
+    }
+    &-title-path-2 {
+        & svg {
+            max-width: 110px;
+            height: auto;
+        }
+    }
+}

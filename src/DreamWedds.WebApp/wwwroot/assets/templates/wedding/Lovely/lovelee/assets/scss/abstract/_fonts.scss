@@ -1,0 +1,40 @@
+// Font Family
+$prata: 'Prata', serif;
+$muli: 'Muli', sans-serif;
+$fontawesome: "Font Awesome 5 Pro";
+$corsiva: "monotype-corsiva", sans-serif;
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/muli-extra-light.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/muli-light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/muli.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/muli-semi-bold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/muli-bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Prata;
+  src: url(../fonts/prata-regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: monotype-corsiva;
+  src: url(../fonts/monotype-corsiva.ttf);
+  font-weight: 400;
+}

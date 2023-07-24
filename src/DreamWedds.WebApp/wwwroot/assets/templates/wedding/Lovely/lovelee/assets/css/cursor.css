@@ -1,0 +1,72 @@
+
+ .cursor-dot, .cursor-dot-outline {
+	 pointer-events: none;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 border-radius: 50%;
+	 z-index: 99;
+	 opacity: 0;
+	 transform: translate(-50%, -50%);
+}
+ .cursor-dot {
+	 width: 8px;
+	 height: 8px;
+	 background-color: #DFB68D;
+}
+ .cursor-dot-outline {
+	 width: 40px;
+	 height: 40px;
+	 background-color: rgba(223, 182, 141, 0.5);
+}
+ .cursor-dot-outline {
+ 	display: none;
+ }
+
+ /* grub */
+ 
+ .cursor-dot.grub-cursor {
+    width: 100px;
+    height: 100px;
+    background-color: #DFB68D;
+}
+
+.cursor-dot.grub-cursor::after {
+    content: "Grub";
+    position: absolute;
+    left: 50%;
+	transition: all .3s;
+    transition: 0s;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #222;
+    font-size: 20px;
+}
+.grub-cursor-entered {
+	width: 80px;
+	height: 80px;
+}
+.grub-cursor-entered::after {
+	position: absolute;
+	left: -50px;
+	color: #DFB68D;
+	font-size: 45px;
+	transition: all .3s;
+	top: 50%;
+	content: "\f104";
+	font-family: 'Font awesome 5 pro';
+	transform: translateY(-50%);
+	z-index: 99;
+}
+.grub-cursor-entered::before {
+	position: absolute;
+	right: -50px;
+	color: #DFB68D;
+	font-size: 45px;
+    transition: 0s;
+	z-index: 99;
+	top: 50%;
+	content: "\f105";
+	font-family: 'Font awesome 5 pro';
+	transform: translateY(-50%);
+}

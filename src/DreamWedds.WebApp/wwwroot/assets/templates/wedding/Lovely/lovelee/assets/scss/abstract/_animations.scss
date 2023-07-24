@@ -1,0 +1,107 @@
+@keyframes drifty {
+  0% {
+    transform: skewY(10deg) translate3d(-250%, 0, 0);
+    display:block;
+  }
+  100% {
+    transform: skewY(-12deg) translate3d(250%, 0, 0);
+    display:block;
+  }
+}
+@keyframes driftyRotate {
+  0% {
+    transform: rotateX(0);
+    display:block;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(359deg);
+    display:block;
+    opacity: 0;
+  }
+}
+@keyframes driftyRotate {
+  0% {
+    transform: rotateX(0);
+    display:block;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(359deg);
+    display:block;
+    opacity: 0;  }
+}
+
+
+@keyframes pataAboutTop1 {
+  0% {
+    top: -90px;
+    left: 50px;
+  }
+  100% {
+    top: 100%;
+    left: 70%;
+  }
+}
+@keyframes pataAboutTop2 {
+  0% {
+    top: -90px;
+    left: 30px;
+  }
+  100% {
+    top: 100%;
+    left: 40px;
+  }
+}
+@keyframes pataAboutTop3 {
+  0% {
+    top: -90px;
+    left: 30px;
+  }
+  100% {
+    top: 100%;
+    left: 0;
+  }
+}
+@keyframes pataAboutTop4 {
+  0% {
+    top: -90px;
+    left: 30px;
+  }
+  100% {
+    top: 100%;
+    left: 30px;
+  }
+}
+@keyframes pataAboutTop5 {
+  0% {
+    top: -90px;
+    left: 30px;
+  }
+  100% {
+    top: 60%;
+    left: 80%;
+  }
+}
+@keyframes pataAboutTop6 {
+  0% {
+    top: -90px;
+    left: 30px;
+  }
+  100% {
+    top: 70%;
+    left: 80%;
+  }
+}
+@keyframes pataAboutTop7 {
+  0% {
+    top: -90px;
+    left: 30px;
+  }
+  100% {
+    top: 70%;
+    left: 30px;
+  }
+}
+
+@-webkit-keyframes blo-danceBottom{16%{-webkit-transform:skew(-14deg);transform:skew(-14deg)}33%{-webkit-transform:skew(12deg);transform:skew(12deg)}49%{-webkit-transform:skew(-8deg);transform:skew(-8deg)}66%{-webkit-transform:skew(6deg);transform:skew(6deg)}83%{-webkit-transform:skew(-4deg);transform:skew(-4deg)}}@keyframes blo-danceBottom{16%{-webkit-transform:skew(-14deg);transform:skew(-14deg)}33%{-webkit-transform:skew(12deg);transform:skew(12deg)}49%{-webkit-transform:skew(-8deg);transform:skew(-8deg)}66%{-webkit-transform:skew(6deg);transform:skew(6deg)}83%{-webkit-transform:skew(-4deg);transform:skew(-4deg)}}@-webkit-keyframes blo-blurInTop{from{-webkit-transform:translateY(100%);transform:translateY(100%);-webkit-filter:blur(20px);filter:blur(20px);opacity:0}}

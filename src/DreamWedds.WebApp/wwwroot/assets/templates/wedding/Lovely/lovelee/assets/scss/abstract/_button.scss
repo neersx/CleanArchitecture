@@ -1,0 +1,87 @@
+/**
+********************************************
+************* 2.Button
+********************************************
+*/
+@use './mixins' as *;
+.lv-transparent {
+	&-btn {
+		display: inline-block;
+	    height: 50px;
+	    line-height: 47px;
+	    color: var(--clr-common-white);
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    padding: 0 50px;
+	    position: relative;
+	    -webkit-backface-visibility: hidden;
+	    border: 1px solid rgba(255,255,255,0.6);
+	    &:hover {
+	    	color: var(--clr-common-white);
+			& .lv-transparent-horizontal-line {
+				@include lvSuduHoverHorizontalLine;
+			}
+			& .lv-transparent-vertical-line {
+				@include suduHoverVerticalLine;
+			}
+		}
+	}
+	&-horizontal-line {
+		@include lvSuduHorizontalLine;
+	}
+	&-vertical-line {
+		@include suduVerticalLine;
+	}
+}
+.lv-about-play-btn-link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    outline: 1px solid var(--clr-border-soft);
+    outline-offset: -3px;
+    & svg {
+    	@include strockSvg(--clr-common-black);
+    }
+    &:hover {
+    	color: var(--clr-common-black);
+    	outline-color: transparent;
+    	& svg {
+	    	@include hoverStrockSvg();
+    	}
+    }
+}
+
+
+.lv-theme-btn {
+    display: inline-block;
+    height: 50px;
+    line-height: 47px;
+    color: var(--clr-common-black);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 50px;
+    position: relative;
+    border: 1px solid #00000030;
+    -webkit-backface-visibility: hidden;
+    border: 1px solid rgb(0 0 0 / 19%);
+    & .lv-theme-horizontal-line {
+    	@include lvSuduHorizontalLine(--clr-common-black);
+    }
+    & .lv-theme-vertical-line {
+    	@include suduVerticalLine(--clr-common-black);
+    }
+    &:hover {
+    	color: var(--clr-common-black);
+		& .lv-theme-horizontal-line {
+	    	@include lvSuduHoverHorizontalLine();
+		}
+		& .lv-theme-vertical-line {
+			@include suduHoverVerticalLine();
+		}
+    }
+}
+

@@ -1,0 +1,63 @@
+/**
+********************************************
+************* 21.Pricing
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+.lv-pricing-box {
+	&-wrap-2 {
+		padding: 10px;
+	    background: var(--clr-common-white);
+	}
+	&-content-2 {
+		border: 1px solid #0000001a;
+	}
+	&-subtitle-2 {
+	    text-transform: uppercase;
+	    margin-bottom: 20px;
+	}
+	&-title-2 {
+	    font-size: 50px;
+        margin-bottom: 3px;
+	    & sup {
+    	    font-size: 20px;
+		    transform: translateY(-14px);
+		    display: inline-block;
+	    }
+	}
+	&-heading-path-2 {
+		line-height: 1;
+	}
+	&-list-2 {
+		& ul {
+			& li {
+				font-size: 16px;
+			    color: var(--clr-common-black);
+			    margin-bottom: 5px;
+			    list-style: none;
+			}
+		}
+	}
+	&-action-btn-2 {
+		display: inline-block;
+	    height: 50px;
+	    line-height: 50px;
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    color: var(--clr-common-black);
+	    padding: 0 70px;
+	    background-color: var(--clr-border-light);
+	    @media #{$xs} {
+	    	padding: 0 40px;
+	    }
+	    &:hover {
+	    	background-color: var(--clr-common-black);
+	    	color: var(--clr-common-white);
+	    }
+	}
+	&-content-2 {
+		padding: 42px 20px;
+		padding-top: 45px;
+		background-color: var(--clr-common-white);
+	}
+}

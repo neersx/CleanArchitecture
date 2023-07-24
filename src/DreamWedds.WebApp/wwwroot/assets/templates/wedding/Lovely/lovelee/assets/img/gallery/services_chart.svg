@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="289" viewBox="0 0 430 289">
+  <g id="services_chart" transform="translate(-705 -1659)">
+    <g id="Years" transform="translate(56 -2.181)">
+      <text id="_2005" data-name="2005" transform="translate(731 1946.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="0" y="0">2005</tspan></text>
+      <text id="_2010" data-name="2010" transform="translate(824 1946.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="0" y="0">2010</tspan></text>
+      <text id="_2015" data-name="2015" transform="translate(916 1946.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="0" y="0">2015</tspan></text>
+      <text id="_2020" data-name="2020" transform="translate(1006 1946.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="0" y="0">2020</tspan></text>
+    </g>
+    <g id="Lines" transform="translate(56 -2.181)">
+      <line id="Line_42" data-name="Line 42" x2="398.992" transform="translate(680.008 1922.255)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_43" data-name="Line 43" y2="210.745" transform="translate(793.875 1711.51)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_44" data-name="Line 44" y2="210.745" transform="translate(885.703 1711.51)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_45" data-name="Line 45" y2="210.745" transform="translate(977.529 1711.51)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_46" data-name="Line 46" y2="210.745" transform="translate(702.047 1711.51)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_47" data-name="Line 47" x2="395.319" transform="translate(683.68 1711.969)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_48" data-name="Line 48" x2="399.452" transform="translate(679.549 1755.128)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_49" data-name="Line 49" x2="399.452" transform="translate(679.549 1797.369)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_50" data-name="Line 50" x2="399.452" transform="translate(679.549 1838.691)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+      <line id="Line_51" data-name="Line 51" x2="399.452" transform="translate(679.549 1881.851)" fill="none" stroke="#e1e6ee" stroke-width="1"/>
+    </g>
+    <g id="Shape" transform="translate(56 -2.181)">
+      <rect id="Rectangle_361" data-name="Rectangle 361" width="75" height="31" transform="translate(710 1878.181)" fill="#b81e1e"/>
+      <rect id="Rectangle_362" data-name="Rectangle 362" width="75" height="69" transform="translate(802 1840.181)" fill="#efa818"/>
+      <rect id="Rectangle_363" data-name="Rectangle 363" width="75" height="109" transform="translate(894 1800.181)" fill="#25cea6"/>
+      <rect id="Rectangle_364" data-name="Rectangle 364" width="76" height="162" transform="translate(985 1747.181)" fill="#387fdc"/>
+    </g>
+    <g id="Digits" transform="translate(56 -2.181)">
+      <text id="_20" data-name="20" transform="translate(673 1926.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-17.108" y="0">20</tspan></text>
+      <text id="_40" data-name="40" transform="translate(673 1885.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-17.584" y="0">40</tspan></text>
+      <text id="_60" data-name="60" transform="translate(673 1843.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-17.332" y="0">60</tspan></text>
+      <text id="_80" data-name="80" transform="translate(673 1801.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-17.794" y="0">80</tspan></text>
+      <text id="_100" data-name="100" transform="translate(673 1759.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-23.772" y="0">100</tspan></text>
+      <text id="_120" data-name="120" transform="translate(673 1718.181)" fill="#0c1020" font-size="14" font-family="Rubik-Regular, Rubik"><tspan x="-23.1" y="0">120</tspan></text>
+    </g>
+    <text id="Service_Growth" data-name="Service Growth" transform="translate(705 1674)" fill="#0c1020" font-size="16" font-family="Rubik-Medium, Rubik" font-weight="500"><tspan x="0" y="0">Service Growth</tspan></text>
+  </g>
+</svg>

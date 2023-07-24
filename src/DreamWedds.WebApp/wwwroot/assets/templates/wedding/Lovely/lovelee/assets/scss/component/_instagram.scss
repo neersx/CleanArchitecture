@@ -1,0 +1,93 @@
+/**
+********************************************
+************* 15.Instagram
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+.lv-instagram {
+	&-icon {
+		position: relative;
+		z-index: 3;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+		& i {
+			font-size: 29px;
+			color: var(--clr-common-white);
+		}
+	}
+	&-img {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&::after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			visibility: hidden;
+			transition: all .3s;
+			content: "";
+			background-color: var(--clr-common-black);
+		}
+		&-height {
+			height: 298px;
+			@media #{$xl} {
+				height: 188px;
+			}
+			@media #{$md} {
+				height: 178px;
+			}
+			&-2 {
+				height: 230px;
+			}
+		}
+		&:hover {
+			&::after {
+				opacity: .5;
+				visibility: visible;
+			}
+			& .lv-instagram-icon {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	&-title-2 {
+	    font-size: 30px;
+	    text-transform: uppercase;
+        margin-bottom: 10px;
+	}
+	&-subtitle-2 {
+		color: var(--clr-body-grey);
+	}
+}
+.lv-instagram-up-down-gallery-2 {
+	& > .row {
+		& > *:nth-child(odd) {
+			margin-top: 47px;
+			@media #{$lg, $md, $xs} {
+				margin-top: 0;
+			}
+		}
+	}
+}
+.lv-has-instagram-overlay-bg-2 {
+	position: relative;
+	& > * {
+		position: relative;
+		z-index: 3;
+	}
+	&::after {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 270px;
+		width: 100%;
+		content: "";
+		background-color: var(--clr-bg-theme-soft);
+	}
+}

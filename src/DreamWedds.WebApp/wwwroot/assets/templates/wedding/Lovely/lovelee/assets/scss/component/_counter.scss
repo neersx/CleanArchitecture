@@ -1,0 +1,40 @@
+/**
+********************************************
+************* 10.Counter
+********************************************
+*/
+@use '../abstract/fonts' as *;
+@use '../abstract/breakpoints' as *;
+.lv-counter {
+	&-box {
+		position: relative;
+		display: inline-block;
+		&-num {
+			font-size: 90px;
+			margin-bottom: 0;
+		    color: var(--clr-body-grey-soft);
+		    & span {
+		    	font-family: $prata;
+		    }
+		    &-link {
+				font-size: 14px;
+			    position: absolute;
+			    bottom: 28px;
+			    text-transform: uppercase;
+			    right: -66px;
+			    color: var(--clr-common-black);
+			    height: 30px;
+			    display: inline-block;
+			    background: var(--clr-common-white);
+			    &:hover {
+			    	color: var(--clr-common-black);
+			    }
+			}
+		}
+	}
+}
+.lv-counter-box.pl-20 {
+	@media #{$xs} {
+		padding-left: 0;
+	}
+}

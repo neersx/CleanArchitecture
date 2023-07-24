@@ -1,0 +1,435 @@
+@media screen and (min-width: 37.5em)
+    .main-navigation
+        ul
+            display: flex
+            width: auto
+            align-items: center
+
+@media screen and (max-width: 1610px)
+    .modal-rsvp-content
+        width: auto
+
+@media screen and (max-width: 1400px)
+    .main-banner
+        background-position: 150px center
+        &::before
+            background-position: -120px center
+@media screen and (max-width: 1100px)
+    .main-banner
+        background-position: -70px center
+        &::before
+            background-position: -200px center
+        .content
+                text-align: left
+    .main-navigation 
+        ul 
+            li
+                padding: 0px 2px
+    .about-couple 
+        .frame-groom
+            padding: 35px 60px 65px 0px
+            .groom-img
+                border-radius: 40px 0px 0px 0px
+        .frame-bride
+            padding: 34px 11px 63px 53px
+            .bride-img
+                border-radius: 0px 40px 0px 0px
+    .thank-you
+        .thank-you-frame
+            .thank-you-slider
+                top: 50px
+                .ty
+                    height: 400px
+                    .ty-img
+                        height: 400px
+@media screen and (max-width: 991px)
+    h1
+        font-size: 40px !important
+    .header-mob-wp.menu-active
+        display: block !important
+        position: fixed
+        width: 100%
+        margin: 0
+        padding: 0
+        top: 0
+        right: 0px
+        ul.menu
+            flex-direction: column
+            background: $text-color
+            margin: 0
+            height: 100vh
+            padding-top: 130px
+            display: flex
+            align-items: baseline
+            a
+                color: #fff
+                font-weight: 100
+                line-height: 40px
+    .site-header
+        position: fixed
+        height: 100px
+        box-shadow: 0 0 80px rgba(0, 0, 0, .50)
+    .main-banner
+        background-position: center
+        height: 100%
+        margin-top: 100px
+        padding-top: 370px
+        overflow: unset
+        &::before
+            height: 100%
+            background-image: url(../img/svg/Mask-Group.png)
+            background-size: contain
+            background-position: center
+            top: 260px
+        .content
+            width: 100%
+            text-align: center
+            position: relative
+            top: 470px
+            z-index: 9
+            padding: 0px
+        .couple-name
+            padding: 20px 0px
+    .main-navigation
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 100px
+        .mob-logo
+            display: block
+            position: absolute
+            left: 50%
+            transform: translate(-50%,0)
+            height: 60px
+            width: 50px
+        .rsvp-icon
+            width: 33px
+            height: 33px
+            display: block
+            cursor: pointer
+        .menu-toggle
+            display: flex
+            height: 50px
+            width: 50px
+            cursor: pointer
+            margin-top: 40px
+            position: absolute
+            z-index: 999
+            right: 15px
+            top: 0
+            flex-direction: column
+            align-items: flex-end
+            .bar-1
+                +bar
+                width: 30px
+            .bar-2
+                +bar
+                width: 20px
+            .bar-3
+                +bar
+                width: 10px
+        .change
+            .bar-1
+                transform: rotate(45deg)
+                background: #fff
+            .bar-2
+                opacity: 0
+            .bar-3
+                transform: rotate(-45deg) translate(11px, -11px)
+                background: #fff
+                width: 30px
+        a.logo
+            display: none
+        .header-mob-wp
+            display: none   
+        ul 
+            li
+                &:hover 
+                    a
+                        color: $title-color !important
+                        padding-left: 40px
+                        &::before,&::after
+                            display: none        
+    
+    .about-couple .frame-groom
+        padding: 5px 248px 42px 180px
+    .about-couple .frame-bride
+        padding: 5px 189px 37px 240px
+        .bride-img
+            border-radius: 0px 40px 0px 0px 
+    .about-couple
+        padding: 500px 0px 0px 0px
+        position: relative
+        z-index: -1
+        .couple-name,.couple-name h3
+            text-align: center !important
+            font-size: 30px
+            padding-bottom: 10px
+            img.ml-5,img.mr-5,.text-overflow
+                margin: 0 auto !important
+        .couple-content
+            .mr-4
+                margin: 0 auto !important
+        .about-title
+            .main-title
+                margin: 20px 0px !important
+        .couple-logo
+            display: none
+    .save-date
+        .coutndown
+            .countdown-box
+                width: 197px
+                padding: 20px 0px
+    // gallery
+    .gallery
+        &::before,&::after
+            display: none
+        .mobile-gallery
+            display: block
+            margin-left: 0px
+            margin-right: 0px
+            border: 5px solid $text-color
+            height: 400px
+            .slick-dots li button
+                +dots
+                &::before
+                    +dots-before
+
+            .slick-dots
+                bottom: -35px
+            .col-lg-4
+                max-width: 100% !important
+                padding: 0
+        .gallery-slider
+            display: none
+        .gallery-img
+            height: 390px
+            &::before
+                height: 100px
+                width: 110px
+                top: 40%
+            
+    // RSVP
+    .rsvp-form
+        .rsvp
+            .pr-0,.pl-0
+                padding-right: 15px !important
+                padding-left: 15px !important
+            &::after
+                top: 44%
+                left: 50%
+            .rsvp-img
+                height: 350px
+                &::before
+                    left: 50%
+                    height: 80px
+                    width: 90px
+            .rsvp-map
+                height: 350px
+    // our-partners
+    .our-partners
+        .slick-dots li button
+            +dots
+            border: 1px solid $title-color
+            &::before
+                +dots-before
+                background: $title-color
+        .gift
+            .gifts-img
+                opacity: 1
+    // thank-you
+    .thank-you
+        padding: 60px 0px
+        .thank-you-frame
+            height: 400px
+            width: 400px
+            background-size: 100% 100%
+            padding: 40px
+            margin: 0 auto
+            .thank-you-slider
+                position: relative
+                height: 320px
+                overflow: hidden
+                background-repeat: no-repeat
+                width: 100%
+                top: 0
+                .ty
+                    .ty-img
+                        height: 320px
+        .thank-you-title
+            padding-top: 15px
+    // footer
+    footer
+        p
+            text-align: center
+    .couple-content
+        flex-direction: column
+    .modal-rsvp-content
+        top: 16%
+        left: 50%
+    .submit-box
+        width: 80px
+        height: 25px
+        &::after,&::before
+            border-radius: 5px
+        input
+            padding: 0px !important
+    // our story
+    .our-story
+        .warpper
+            .about-story
+                justify-content: center
+                flex-direction: column
+                text-align: center
+                p
+                    margin-bottom: 0px
+    .about-story
+        img
+            width: 90px
+@media screen and (max-width: 767px)
+    .about-couple
+        .frame-groom
+            padding: 3px 156px 38px 87px
+        .frame-bride
+            padding: 3px 98px 37px 147px
+        .text-overflow
+            max-height: 80px
+            width: 60%
+        .bride-dress
+            padding-top: 20px
+    .rsvp-form
+        .rsvp
+            .rsvp-map
+                top: -2px
+    .main-title
+        font-size: 40px
+    p
+        font-size: 20px !important
+    .content-logo
+        width: 70px
+    .our-story
+        .warpper
+            &::after
+                display: none
+
+@media screen and (max-width: 575px)
+    .about-couple
+        .frame-groom
+            padding: 3px 172px 38px 107px
+        .frame-bride
+            padding: 3px 115px 37px 165px
+    .main-banner
+        padding-top: 252px
+        margin: 0
+    .rsvp-form
+        .rsvp
+            &::after
+                width: 70px
+                height: 100px
+            .rsvp-img,.rsvp-map
+                height: 300px
+    .modal-body
+        background-image: url(../img/svg/rsvp-modal-ph.svg)
+    .modal-rsvp-content
+        left: 55%
+        width: 50%
+    .modal-header .close
+        margin-bottom: 40px
+    .modal-rsvp-content .form
+        left: -30px !important
+@media screen and (max-width: 480px)
+    .about-couple
+        .frame-groom
+            padding: 3px 125px 38px 57px
+        .frame-bride
+            padding: 3px 68px 37px 120px
+    .rsvp-title
+        font-size: 30px !important
+@media screen and (max-width: 420px)
+    .thank-you
+        .thank-you-frame
+            position: relative
+            right: 8px
+    .modal-rsvp-content
+        .form
+            form
+                label
+                    font-size: 16px
+    .about-couple
+        .frame-groom
+            padding: 3px 93px 38px 25px
+        .frame-bride
+            padding: 3px 35px 37px 85px
+@media screen and (max-width: 400px)
+    .thank-you
+        .thank-you-frame
+            height: 100%
+            width: 100%
+            .thank-you-slider
+                height: 280px
+    .about-couple
+        padding-top: 420px
+        .frame-groom
+            padding: 3px 72px 38px 2px
+        .frame-bride
+            padding: 3px 13px 37px 62px
+        .text-overflow
+            width: 100%
+    .main-banner
+        .content
+            top: 400px
+        .content,.text-overflow
+            h3,p
+                letter-spacing: 0px
+                line-height: 20px
+                font-size: 20px
+        .text-overflow
+            h3
+                margin-top: 0px
+    .submit-box
+        margin-top: 30px
+    .modal-rsvp-content
+        left: 60%
+        width: 70%
+        top: 10%
+    .modal-rsvp-content .form
+            left: -40px !important
+    .rsvp-form
+        .rsvp
+            &::after
+                width: 50px
+                height: 70px
+            .rsvp-img,.rsvp-map
+               height: 200px
+            .rsvp-img
+                &::before
+                    height: 50px
+                    width: 60px
+            .rsvp-map
+                &::after
+                    height: 60px
+                    width: 42px
+    .modal-rsvp-content
+        .form
+            form
+                .group
+                    margin-bottom: 5px
+
+@media screen and (max-width: 340px)
+    .modal-rsvp-content
+        top: 20%
+    .thank-you
+        .thank-you-frame
+            .thank-you-slider
+                height: 210px
+    .about-couple
+        .frame-bride
+            padding: 23px 13px 55px 59px
+        .frame-groom
+            padding: 23px 64px 56px 2px
+@media screen and (max-width: 320px)
+    .about-couple
+        .frame-groom
+            padding: 33px 64px 66px 2px
+        .frame-bride
+            padding: 31px 13px 65px 56px

@@ -1,0 +1,319 @@
+/*
+Theme Name: Wedding- Responsive Theme
+Theme URI: http://alisa-jhon.themexriver.com/
+Author: themexriver
+Description: Bootstrap wedding template
+Version: 1.0
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#1	navbar
+#2	main
+	#2.1 intro
+	#2.2 html-structure
+
+--------------------------------------------------------------*/
+
+body {
+    font-family: 'Iceland', cursive;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Montez', cursive;
+    color: #C4A676;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montez', cursive;
+    color: #C4A676;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: 'Montez', cursive;
+    color: #C4A676;
+}
+
+p {
+    margin-bottom: 13px;
+    color: #212736;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.padding {
+    padding: 50px 0 0;
+}
+
+h2+p {
+    margin-bottom: 40px;
+}
+
+mark {
+    background: yellow;
+}
+
+ul li.active {
+    font-weight: bold;
+}
+
+a:hover,
+a:focus {
+    background: none !important;
+}
+
+
+/*img {
+	width: 100%;
+	height: auto;
+}
+*/
+
+
+/*--------------------------------------------------------------
+#1	navbar
+--------------------------------------------------------------*/
+
+.main-navigation {
+    padding: 0;
+}
+
+.navbar {
+    position: absolute;
+    height: auto;
+}
+
+#navbar {
+    padding: 0 !important;
+}
+
+.navbar ul {
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #939985;
+    padding: 30px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    z-index: 10;
+}
+
+.navbar ul span {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.navbar ul span img {
+    width: 80px;
+}
+
+.navbar ul li {
+    display: block;
+    width: 100%;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav>li.active>a {
+    background-color: #5d6155 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    #navbar {
+        position: absolute;
+        z-index: 10;
+        width: 101%;
+        left: -1px;
+        top: 48px;
+        box-shadow: none;
+    }
+    .navbar ul {
+        position: static;
+        z-index: 10;
+        box-shadow: none;
+        width: 100vw !important;
+        margin: 0;
+        height: 100vh;
+    }
+    .navbar ul li a {
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.navbar-header button span {
+    background: #ffffff;
+    z-index: 20;
+}
+
+
+/*--------------------------------------------------------------
+#1	main
+--------------------------------------------------------------*/
+
+.main {
+    padding: 0 100px 20px 340px;
+}
+
+
+/*--------------------------------------------------------------
+#2.1 intro
+--------------------------------------------------------------*/
+
+.intro {
+    padding: 50px 0 0;
+}
+
+.intro .create-info {
+    color: #212736;
+    margin-bottom: 50px;
+}
+
+.intro p {
+    text-align: justify;
+    margin-bottom: 13px;
+    color: #212736;
+    line-height: 25px;
+}
+
+.intro .thanks {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.intro .thanks span {
+    color: #939985;
+    font-weight: bold;
+}
+
+.sec-box {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.sec-box img {
+    width: 600px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .main {
+        padding: 0 40px 20px 280px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .main {
+        padding: 0 30px 20px 230px;
+    }
+    .navbar ul {
+        width: 200px;
+    }
+    .sec-box {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .sec-box img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main {
+        padding: 0 30px;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+        background: #939985;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .main {
+        padding: 0 15px;
+    }
+}
+
+@font-face {
+    font-family: 'Iceland';
+    src: url("/assets/fonts/Iceland-Regular.ttf");
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Montez';
+    src: url("/assets/fonts/Montez-Regular.ttf");
+}
+
+
+/*--------------------------------------------------------------
+#2.2 html-structure
+--------------------------------------------------------------*/
+
+.html-structure {
+    padding: 50px 0 0;
+}
+
+.html-structure img {
+    width: 100%;
+}
+
+.html-structure h2+p {
+    margin-bottom: 10px;
+}
+
+.html-structure .note {
+    margin-bottom: 30px;
+}
+
+#others mark {
+    display: inline-block;
+    background: #212736;
+    color: #ffffff;
+    padding: 5px 20px;
+}
+
+#others p {
+    padding: 25px 0 10px;
+}

@@ -7,6 +7,30 @@ namespace BlazorHero.CleanArchitecture.Shared.Constants.Permission
 {
     public static class Permissions
     {
+        [DisplayName("Themes")]
+        [Description("Themes Permissions")]
+        public static class Themes
+        {
+            public const string View = "Permissions.Themes.View";
+            public const string Create = "Permissions.Themes.Create";
+            public const string Edit = "Permissions.Themes.Edit";
+            public const string Delete = "Permissions.Themes.Delete";
+            public const string Export = "Permissions.Themes.Export";
+            public const string Search = "Permissions.Themes.Search";
+        }
+
+        [DisplayName("Wedding")]
+        [Description("Wedding Permissions")]
+        public static class Wedding
+        {
+            public const string View = "Permissions.Wedding.View";
+            public const string Create = "Permissions.Wedding.Create";
+            public const string Edit = "Permissions.Wedding.Edit";
+            public const string Delete = "Permissions.Wedding.Delete";
+            public const string Export = "Permissions.Wedding.Export";
+            public const string Search = "Permissions.Wedding.Search";
+        }
+
         [DisplayName("Products")]
         [Description("Products Permissions")]
         public static class Products

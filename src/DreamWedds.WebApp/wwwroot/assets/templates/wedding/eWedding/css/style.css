@@ -1,0 +1,3681 @@
+/* =================================================================== */
+/*
+/*      - Template Name: eWedding - Responsive HTML Wedding Template
+/*      - Author: GoNAF
+/*      - Version: 3.0
+/*      - Website: www.zawajco.com
+/*
+/* =================================================================== */
+
+/* -----------------------------------------------
+        [Table of contents]
+--------------------------------------------------
+
+1. Preloader
+2. Base Styles 
+3. Fonts
+4. Nav Bar
+4.1. White Color Navbar
+4.2. Transparent Navbar 
+4.3. Mobile Navbar 
+5. Main Slider 
+5.1. Main Slider Title
+5.2. Main Slider Slide-image 
+5.3. Main Slider Video-control
+5.4. Main Slider Audio-control
+5.5. Main Slider Control Nav
+6. Image Icon
+7. Couple Section
+7.1. Couple Header
+7.2. Couple Info
+7.3. Couple Story Timeline
+8. Wedding Section
+8.1 Wedding Header
+8.2 Wedding Info
+9. Countdown Section
+10. Program Of The Day Section
+10.1 program Of The Day Header
+10.2 program Of The Day Info
+10.3 program Of The Day Timeline
+11. Blockquote Section
+12. Suscribe Section
+13. Gallery Images
+13.1. Gallery Images Fluid
+13.2. Gallery Images Section - Index Page
+13.3. Gallery Images Header - Index Page
+14. About Here, About Him, Love Story Pages
+14.1. About Section Header 
+14.2. About Section Social
+14.3. About Section Content
+15. Image Gallery Pages
+15.1 Image Gallery Header
+15.2 Image Gallery Content
+15.3 Image Gallery Slider
+15.4 Image Gallery Fluid
+16. The Wedding Ceremony Section
+16.1 The Wedding Ceremony - Location & Date
+16.2 The Wedding Ceremony - Reception & Party
+16.3 The Wedding Ceremony - Accomodation
+17. Bridsmaid & Groosman
+17.1. Bridsmaid & Groosman Header
+17.2. Bridsmaid & Groosman Content
+17.3. Bridsmaid & Groosman one Page
+18. Gift Registry
+18.1. Gift Registry Header
+18.2. Gift Registry Content
+19. Blog Section
+19.1. Blog Header
+19.2. Blog Image Title
+19.3. Blog Slider
+19.4. Blog Gallery Content
+19.5. Blog Single Page
+20. Register Section
+20.1. Register Image Title
+20.2. Register Header
+20.3. Register Form
+21. Social Icons
+22. Image Overly Effect
+23. Line Separator 
+24. Triangle Separator
+25. Background Cover
+26. Magnific Popup Plugin Custom
+27. Panel Image Reorder
+28. Owl Carousel
+29. Footer
+30. Wedding Menu
+*/
+
+/* ----------------------------------------------- */
+/* 1. Preloader
+/* ----------------------------------------------- */
+
+/* See: CSS/preloader.css  */
+
+/* ----------------------------------------------- */
+/* 2. Base Styles 
+/* ----------------------------------------------- */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:Lora;
+    font-size: 16px;
+    color: #101010;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+}
+p {
+    line-height:28px;
+    font-size:16px;
+    font-family:Lora;
+    color: #949494;
+}
+h1, h2, h3, h4, h5 {
+    font-family:Montserrat;
+}
+.no-padding {
+    padding: 0;
+}
+.btn, a, a.expand {
+    cursor: pointer;
+}
+.btn {
+    font-weight: 400;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.55;
+    border-radius: 0;
+}
+.btn-medium {
+    margin-top: 5px;
+    color: #c8ba7b;
+    background-color: transparent;
+    border: 1px solid #ffffff;;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-medium:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #c8ba7b;
+    font-weight: bold;
+}
+.btn-medium-v2 {
+    margin-top: 20px;
+    padding: 10px 12px;
+    font-family: Montserrat;
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #eaeaea;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.btn-medium-rsvp {
+    margin-top: 20px;
+    padding: 10px 12px;
+    font-family: Montserrat;
+    color: #101010;
+    background-color: transparent;
+    border: 2px solid #eaeaea;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.btn-medium-rsvp:hover {
+    color:#fff;
+    text-decoration: none;
+    background: #e1b6a0;
+    border: 2px solid #eaeaea;
+}
+.btn-medium-v2:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #e1b6a0;
+    border: 2px solid transparent;
+}
+.btn-medium-v3 {
+    margin-top: 20px;
+    color:  #fff; 
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.btn-medium-v3:hover {
+    border: 2px solid transparent;
+    text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+    background: #e1b6a0;
+    font-weight: normal;
+}
+.btn-medium-v4 {
+    margin-top: 20px;
+    color:  #fff; 
+    background-color: #e1b6a0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.btn-medium-v4:hover {
+    color: #060606;
+    text-decoration: none;
+    background: #ffffff;
+}
+.btn-large {
+    font-size: 14px;
+}
+.link {
+    color: #949494;
+}
+#wedding-info.v3 .link {
+    color: #949494;
+}
+.link:focus, .link:hover {
+    color: #c0b079;
+    text-decoration: none;
+}
+.link.rose:focus, .link.rose:hover {
+    color: #e1b6a0;
+    text-decoration: none;
+}
+.glyphicon.rose {
+    color: #e1b6a0;
+}
+.grey-bg {
+    background: #f9f9f9 !important;
+}
+.white-panel {
+    background: #fff;
+}
+img {
+    width: 100%;
+}
+.hearticon {
+    font-size: 22px;
+    color: #e09d7c;
+    font-weight: bold;
+    z-index: 10;
+}
+.hearticon-2 {
+    margin-left: -15px;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #ffffff;
+    font-size: 22px;
+}
+.hearticon-3 {
+    left: -15px;
+    color: #e1b6a0;
+    font-weight: bold;
+    top: 5px;
+}
+.icon-xl {
+    font-size: 25px;
+}
+.delay1 {
+    -webkit-animation-delay: 0.5s;  
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s; 
+}
+.delay2 {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s; 
+    animation-delay: 1s; 
+}
+.delay3 {  
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;  
+    animation-delay: 1.5s;
+}
+.delay4 { 
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s; 
+    animation-delay: 2s; 
+}
+.error {
+    color: #f23b43;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #f23b43;
+    padding-top: 10px;
+    font-weight: normal;
+}
+#comment-form label.error {
+    color: #f23b43;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #f23b43;
+    padding-top: 10px;
+    font-weight: normal;
+}
+span.visible-xs {
+    line-height: 0.1;
+}
+img.logo-white-bg {
+    width: 141px;
+}
+@media (max-width: 767px) {
+    img.logo-white-bg {
+        width: 100px;
+    }
+}
+@media (max-width: 1024px) {
+    img.logo-white-bg {
+        width: 110px;
+    }
+}
+.blgpadding {
+    padding: 5px !important;
+}
+.cls {
+    font-size: 22px;
+    color: #FFF;
+}
+
+/* -------------------------------------------------- */ 
+/* 3. Fonts
+/* -------------------------------------------------- */ 
+
+@font-face{
+    font-family:Great Vibes;
+    src: url(http://fonts.gstatic.com/s/greatvibes/v4/4Mi5RG_9LjQYrTU55GN_L6CWcynf_cDxXwCLxiixG1c.ttf);
+}
+@font-face{
+    font-family:Lora;
+    src: url(http://fonts.gstatic.com/s/lora/v9/aXJ7KVIGcejEy1abawZazg.ttf);
+}
+@font-face{
+    font-family:Montserrat;
+    src: url(http://fonts.gstatic.com/s/montserrat/v7/Kqy6-utIpx_30Xzecmeo8_esZW2xOQ-xsNqO47m55DA.ttf);
+}
+@font-face{
+    font-family:Josefin Slab;
+    src: url(http://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfS3USBnSvpkopQaUR-2r7iU.ttf);
+}
+
+/* -------------------------------------------------- */ 
+/* 4. Nav Bar
+/* -------------------------------------------------- */ 
+
+/* 4.1. White Color Navbar
+------------------------------------ */ 
+
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    padding: 0px;
+    line-height: 24px;
+    font-family: Montserrat;
+    color: #515252;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+.navbar-menu {
+    font-size: 12px;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #515252;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #3c3333;
+}
+#navbar {
+    font-size: 12px;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #0c0c0c;
+}
+.nav-heart-icon {
+    color: #e1b6a0;
+    font-size: 8px;
+    margin-left: 8px;
+    z-index: 10;
+}
+.navbar-nav>li>a:hover .nav-heart-icon {
+    color: #e0c5b7;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-top: 3px solid #e1b6a0;
+}
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+    color: #c8ba7b;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,.10);
+}
+.dropdown-menu>li>a {
+    display: block;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    clear: both;
+    border-top: 1px solid rgba(0,0,0,.10);
+    font-weight: 400;
+    line-height: 1.42857143;
+    color:#3c3333;
+    white-space: nowrap;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+@media (min-width:768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+.caret {
+    color: #e1b6a0;
+}
+.v2 .caret{
+    color: #e1b6a0;
+}
+#navbar-transparent.caret{
+    color: #e1b6a0;
+}
+.v2 .dropdown-menu {
+    border-top: 3px solid  #e1b6a0;
+}
+.v2 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    color: #e1b6a0;
+}
+.caret-up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: transparent;
+}
+.navbar-default {
+    border-color: transparent;
+}
+.stuck {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.11);
+    box-shadow: 0 1px 3px rgba(0,0,0,.11);
+}
+
+/* 4.2. Transparent Navbar 
+------------------------------------ */
+
+.navbar-color {
+    background-color: #ffffff;
+    height: 90px;
+    font-family: Montserrat;
+}
+.navbar-transparent {
+    background-color: transparent;
+    height: 90px;
+}
+.sticky-wrapper {
+    position: absolute;
+}
+.navbar-transparent {
+    font-family: Montserrat;
+    font-weight: bold;
+    background: rgba(255,255,255,0.1);
+    border-bottom: 1px solid transparent;
+}
+.navbar-transparent .navbar-brand {
+    color: #fff;
+}
+.navbar-transparent .navbar-toggle {
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+.navbar-default.navbar-transparent .navbar-nav>.open>a,
+.navbar-default.navbar-transparent .navbar-nav>.open>a:focus,
+.navbar-default.navbar-transparent .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-brand>img.logo-transparent-bg{
+    display: none;
+}
+.navbar-transparent .navbar-brand>img.logo-transparent-bg{
+    display: block;
+}
+.navbar-transparent .navbar-brand>img.logo-white-bg {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navbar-collapse {
+        padding-left: 0px;
+    }
+    .navbar-transparent .navbar-nav>.active>a, 
+    .navbar-transparent .navbar-nav>.active>a:focus, 
+    .navbar-transparent .navbar-nav>.active>a:hover {
+        color: #fff;
+    }
+    .navbar-transparent .navbar-nav>li>a,
+    .navbar-transparent .navbar-nav>li>a:focus,
+    .navbar-transparent .navbar-nav>li>a:hover {
+        color: #fff;
+    }
+    .navbar-transparent .navbar-brand:focus,
+    .navbar-transparent .navbar-brand:hover {
+        color: #fff;
+    }
+    .active-nav {
+        padding: 20px 30px;
+        font-weight: bold;
+        background: #fff;
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.11);
+        box-shadow: 0 1px 3px rgba(0,0,0,.11);
+    }
+    .active-nav .navbar-nav>li>a,
+    .active-nav .navbar-nav>li>a:focus, 
+    .active-nav .navbar-nav>li>a:hover {
+        color: #515252;
+    }
+    .navbar-transparent .caret {
+        color: #fff;
+    }
+    .active-nav .caret {
+        color: #c8ba7b;
+    }
+}
+.active-nav .navbar-brand,
+.active-nav .navbar-brand:focus, 
+.active-nav .navbar-brand:hover {
+    color: #515252;
+}
+@media (max-width: 768px) {
+    .active-nav {
+        background: #fff;
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.11);
+        box-shadow: 0 1px 3px rgba(0,0,0,.11);
+    }
+}
+
+/* 4.3. Mobile Navbar 
+------------------------------------ */
+
+@media (max-width: 767px) {
+    .offcanvas-stop-scrolling {
+        height: 100%;
+        overflow: hidden; 
+    }
+    .navbar-default .navbar-offcanvas {
+        background-color:#ffffff; 
+    }
+    .navbar-default.navbar-transparent .navbar-nav>.open>a, .navbar-default.navbar-transparent .navbar-nav>.open>a:focus, .navbar-default.navbar-transparent .navbar-nav>.open>a:hover {
+        color: #515252;
+    }
+    .navbar-inverse .navbar-offcanvas {
+        background-color: #222; 
+    }
+    .navbar-offcanvas {
+        position: fixed;
+        width: 100%;
+        max-width: 250px;
+        left: -250px;
+        top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        z-index: 999;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: all 0.15s ease-in;
+        transition: all 0.15s ease-in; 
+    }
+    .navbar-offcanvas.in {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    }
+    .navbar-offcanvas.navbar-offcanvas-fade {
+        opacity: 0; 
+    }
+    .navbar-offcanvas.navbar-offcanvas-fade.in {
+        opacity: 1;
+    }
+    .navbar-offcanvas.offcanvas-transform.in {
+        -webkit-transform: translateX(250px);
+        transform: translateX(250px); 
+    }
+    .navbar-offcanvas.offcanvas-position.in {
+        left: 0; 
+    }
+    .navbar-offcanvas.navbar-offcanvas-right {
+        left: auto;
+        right: -250px;
+    }
+    .navbar-offcanvas.navbar-offcanvas-right.offcanvas-transform.in {
+        -webkit-transform: translateX(-250px);
+        transform: translateX(-250px); 
+    }
+    .navbar-offcanvas.navbar-offcanvas-right.offcanvas-position.in {
+        left: auto;
+        right: 0; 
+    }
+    .navbar-offcanvas .dropdown.active .caret {
+        border-top: 0;
+        border-bottom: 4px solid; 
+    }
+    .navbar-offcanvas .dropdown-menu {
+        position: relative;
+        width: 100%;
+        border: inherit;
+        box-shadow: none;
+        -webkit-transition: height 0.15s ease-in;
+        transition: height 0.15s ease-in;
+    }
+    .navbar-offcanvas .dropdown-menu.shown {
+        display: block;
+        margin-bottom: 10px;
+    } 
+}
+
+/* -------------------------------------------------- */  
+/* 5. Main Slider 
+/* -------------------------------------------------- */  
+
+/* 5.1. Main Slider Title
+------------------------------------ */ 
+
+#homeslider-wrap {
+    margin:0; 
+    padding:0;
+    position:relative;
+}
+.flexslider {
+    -webkit-box-shadow: 0 1px 4px rgb(255, 255, 255);
+    -moz-box-shadow: 0 1px 4px rgb(255, 255, 255);
+    -o-box-shadow: 0 1px 4px rgb(255, 255, 255);
+    box-shadow: 0 1px 4px rgb(255, 255, 255);
+}
+#homeslider-wrap .container.vertical-center {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.26) !important;
+    width: 100%;
+    height: inherit;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+#homeslider-wrap.v2 .container.vertical-center {
+    background-color: rgba(0, 0, 0, 0.31) !important;
+}
+#homeslider-wrap .carousel-caption {
+    right: 0;
+    left: 0;
+}
+#homeslider-wrap .row-slider {
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
+#homeslider-wrap h1 {
+    font-size: 45px;
+    font-weight:400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#homeslider-wrap p {
+    color: #ffffff;
+}
+#homeslider-wrap.v2 h2 {
+    color: #ffffff;
+}
+#homeslider-wrap.v2 .logo-slider {
+    color: #ffd0bc;
+}
+#homeslider-wrap h2 {
+    font-size: 100px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color: #ffffff; 
+    font-weight: 400;
+}
+#homeslider-wrap .margin {
+    margin-bottom: 40px;
+}
+#homeslider-wrap .slider-banner {
+    font-size: 20px;
+    padding-top: 10px;
+}
+#homeslider-wrap .logo-slider {
+    color:  #ffd0bc; 
+}
+@media (max-width: 767px) {
+    #homeslider-wrap h1 {
+        font-size: 26px;
+    }
+    #homeslider-wrap h2 {
+        font-size: 55px;
+        line-height: 50px
+    } 
+    #image-gallery-slider .slider-title h1 {
+        padding-bottom: 20px;
+    }
+    #image-gallery-slider .slider-title h2 {
+        padding-bottom: 20px;
+    }
+    #homeslider-wrap .slider-banner {
+        font-size: 16px;
+    }
+}
+
+/* 5.2. Main Slider Slide-image 
+------------------------------------ */ 
+
+#homeslider-wrap .slides,
+#homeslider-wrap.flexslider .slides li {
+    position:relative;
+    height:inherit;
+    width:100%;
+    overflow:hidden;
+}
+#homeslider-wrap .homesliderimage {
+    position:relative;
+    height:inherit;
+    width:100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position:50% 50%;
+    background-color:#FFF;
+    -webkit-transform: translateZ(0);
+}
+@media (max-width: 768px) {
+    #homeslider-wrap .homesliderimage {
+        background-attachment: scroll; 
+    }
+} 
+
+/* 5.3. Main Slider Video-control
+------------------------------------ */ 
+
+.video-control {
+    width:150px;
+    padding: 20px;
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    right: 0px;
+}
+.video-control .glyphicon-play,
+.video-control .glyphicon-pause {
+    border-radius: 50px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 14px;
+    background-color: transparent;
+    padding: 5px;
+}
+.video-control .glyphicon-volume-up,
+.video-control .glyphicon-volume-off {
+    border-radius: 50px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 14px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+/* 5.4. Main Slider Audio-control
+------------------------------------ */ 
+
+.audio-control {
+    padding: 20px 30px;
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    right: 0px;
+}
+.audio-control .glyphicon-volume-up,
+.audio-control .glyphicon-volume-off{
+    border-radius: 50px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    font-size: 14px;
+    background-color: transparent;
+    padding: 5px;
+}
+
+/* 5.5. Main Slider Control Nav
+------------------------------------ */ 
+
+#homeslider-wrap.flexslider {
+    border: 0px;
+}
+#homeslider-wrap.flexslider .flex-direction-nav .flex-prev { 
+    left: 0px; 
+}
+#homeslider-wrap.flexslider .flex-direction-nav .flex-next {
+    right: 0px; text-align: right; 
+}
+#homeslider-wrap.flexslider:hover .flex-prev {
+    opacity: 0.7; left: 100px; 
+}
+#homeslider-wrap.flexslider:hover .flex-next {
+    opacity: 0.7; right: 100px;
+}
+#homeslider-wrap .flex-direction-nav a {
+    z-index:4;
+    line-height: 40px;
+}
+#homeslider-wrap .flex-direction-nav a:before {
+    color: #ffffff;
+}
+#homeslider-wrap.v2 .flex-direction-nav a:before {
+    color: #ffffff;
+}
+#homeslider-wrap .flex-direction-nav a:before {
+    font-size: 30px;
+}
+@media (max-width: 991px) {
+    #homeslider-wrap.flexslider:hover .flex-prev { opacity:0.4; left: 30px; }
+    #homeslider-wrap.flexslider:hover .flex-next { opacity:0.4;right: 30px; }
+    #homeslider-wrap.flexslider .flex-direction-nav .flex-prev {opacity: 0.4; left: 30px; }
+    #homeslider-wrap.flexslider .flex-direction-nav .flex-next {opacity: 0.4; right: 30px; }
+}
+
+/*------------------------------------------------ */
+/* 6. Image Icon
+/*------------------------------------------------ */
+
+.img-headline {
+    width: 73px;
+}
+.img-headline-br {
+    width: 200px;
+}
+.img-headline-v2 {
+    width: 140px;
+}
+.img-headline-onepage {
+    width: 250px;
+}
+
+/*------------------------------------------------ */
+/* 7. Couple Section
+/*------------------------------------------------ */
+
+/* 7.1. Couple Header 
+------------------------------------ */
+
+#couple-header {
+    padding: 80px 0 0 0;
+}
+#couple-header.v3 {
+    padding: 100px 0 100px 0;
+}
+@media (max-width: 767px) {
+    #couple-header {
+        padding: 60px 0 0 0;
+    }
+}
+#couple-header .headline {
+    font-family: Montserrat;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#couple-header.onepage .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+}
+#couple-header .headline-v2 {
+    font-family: Montserrat;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#couple-header .subtitle {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#couple-header .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 20px;
+}
+@media (max-width: 767px) {
+    #couple-header .headline {
+        font-size: 25px;
+    }
+}
+
+/* 7.2. Couple Info
+------------------------------------ */
+
+#couple-info {
+    padding: 50px 0 120px 0;
+}
+@media (max-width: 767px) {
+    #couple-info {
+        padding: 10px 0 60px 0;
+    }
+}
+#couple-info  img {
+    width: 100%;
+    background-color: transparent;
+}
+#couple-info  .row,
+#couple-info  .col-md-6 {
+    padding: 0;
+}
+#couple-info  .row {
+    background-color: #f9f9f9 !important;
+}
+#couple-info .row.trsp {
+    background-color: transparent !important;    
+}
+#couple-info .pading-text {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+@media (min-width: 769px) {
+    #couple-info .pading-text {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+    #couple-info .pading-text {
+        margin-bottom: 60px;
+    }  
+}
+#couple-info .wraper-loc {
+    padding: 10px 80px 40px 80px;
+}
+#couple-info .wraper-loc-v2 {    
+    padding: 20px 30px;
+}
+#couple-info .wraper-loc-v6 {    
+    padding: 10px 40px 40px 40px;
+}
+#couple-info .panel-inner-head {
+    font-family: Montserrat;
+    font-size: 24px;
+    padding: 20px 0 10px 0;
+}
+#couple-info .panel-inner-head-v2 {
+    font-family: Montserrat;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+#couple-info .panel-inner-subhead { 
+    font-size: 18px;
+    color: #949494;    
+    line-height: 30px;
+    text-shadow: 0 1px 1px #fff;
+}
+#couple-info .panel-text { 
+    color:#949494;    
+    line-height: 30px;
+    text-shadow: 0 1px 1px #fff;
+}
+#couple-info .wraper-loc .spacer2 {
+    width: 60px;
+    border-top: 1px solid #d8d4d4;
+    margin-top: 20px;
+}
+#couple-info .wraper-loc .spacer3 {
+    margin-bottom: 10px;  
+    border: 1px solid transparent;
+}
+#couple-info .wraper-loc .spacer4 {
+    margin-bottom: 20px;  
+    border: 1px solid transparent;
+}
+@media (max-width: 767px) {
+    #couple-info .panel-inner-head {
+        font-size: 22px;
+    }
+    #couple-info .vp.panel-text { 
+        font-size: 15px;
+    }
+    #couple-info .panel-inner-head-v2 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+/* 7.3. Couple Story Timeline
+------------------------------------ */  
+
+#couple-timeline {
+    padding:60px 0 40px 0;
+}
+@media (max-width: 767px) {
+    #couple-timeline {
+        padding: 40px 0 40px 0;
+    } 
+}
+#wedding-header.wedding-header-single-page {
+    padding: 80px 0 10px 0;
+}
+@media (max-width: 767px) {
+    #wedding-header.wedding-header-single-page {
+        padding: 60px 0 0 0;
+    }
+}
+.fecha {
+    color: #867436;
+}
+.story-timeline-1 h3,
+.story-timeline h3 {
+    font-family: Great Vibes;
+    font-size: 38px;
+    text-align: left;
+}
+@media (min-width: 769px) {
+    .story-timeline-h {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+    .story-timeline {
+        text-align: right;
+        margin-right: -150px;
+        position: absolute;
+    }
+    .story-timeline-1 {
+        text-align: left;
+        margin-left: -100px;
+        position: absolute;
+    }
+    .story-timeline-text {
+        padding-top: 140px;
+        margin-left: -50px;
+    }
+    .story-timeline-text-1 {
+        padding-top: 140px;
+        margin-right: -50px;
+        text-align: right;
+    }
+    .story-timeline-text p{
+        padding: 20px;
+        margin-left: -40px;
+        padding-left: 40px;
+
+        border-left: 1px solid #e1dddd;
+    }
+    .story-timeline-text-1 p {
+
+        padding: 20px;
+        margin-right: -40px;
+        padding-right: 40px;
+        border-right: 1px solid #e1dddd;
+    }
+}
+@media (max-width: 768px) {
+    .story-timeline-text p,
+    .story-timeline-text-1 p{
+        padding: 0 30px;
+        margin-left: 0px;
+        padding-left: 40px;
+        border-left: 1px solid #e1dddd;
+    }
+    .story-timeline-h {
+        margin: 40px 0;
+    } 
+}    
+#couple-timeline .timeline {
+    margin: 0 0 60px 0;
+}
+#couple-timeline .timeline h5{
+    color: #949494;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: Lora;
+
+}
+#couple-timeline .timeline .fecha{
+    color: #101010;
+    font-weight:400;
+    font-family: Montserrat;
+}
+@media (max-width: 767px) {
+    #couple-timeline .timeline {
+        margin: 0 0 40px 0;
+    }
+}
+.vertical-line {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-left: 1px solid #e1dddd;
+}
+
+/* ------------------------------------------------ */
+/* 8. Wedding Section
+/* ------------------------------------------------ */
+
+/* 8.1 Wedding Header
+------------------------------------ */
+
+#wedding-header {
+    padding: 0 0 30px 0;
+}
+@media (max-width: 767px) {
+    #wedding-header {
+        padding: 0 0 10px 0;
+    }
+}
+#wedding-header .headline {
+    font-family: Montserrat;
+    font-size: 25px;
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+#wedding-header.wedding-header-single-page .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+}
+#wedding-header .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 20px;
+}
+#wedding-header .subtitle {
+    font-size: 16px;
+}
+@media (max-width: 767px) {
+    #wedding-header.wedding-header-single-page .headline {
+        font-size: 35px;
+    }
+}
+
+/* 8.2 Wedding Info
+------------------------------------ */
+
+#wedding-info {
+    padding: 50px 0 80px 0;
+}
+#wedding-info.onepage {
+    background: #ffffff;
+    padding: 20px 0 80px 0;
+}
+#wedding-info.v1{
+    padding: 100px 0 100px 0;
+}
+@media (max-width: 767px) {
+    #wedding-info.v1 {
+        padding: 80px 0 50px 0;
+    }
+}
+#wedding-info.v3{
+    padding: 100px 0 100px 0;
+}
+#wedding-info .wraper-we {
+    background-color: #f9f9f9;
+    padding: 10px 30px 35px 30px;
+    margin: 20px 0;
+}
+#wedding-info .wraper-we.onepage {
+    background-color: #f9f9f9;
+}
+#wedding-info.v2  .wraper-we{
+    background-color: #f9f9f9;
+}
+#wedding-info.v3  .wraper-we{
+    background-color: #f9f9f9;
+}
+#wedding-info .wraper-we h3 {
+    font-size: 22px;
+}
+#wedding-info .wraper-we .wed-text {
+    font-size: 16px;
+}
+#wedding-info .pading-text {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#wedding-info .wraper-we img {
+    padding-top: 20px;
+}
+@media (min-width: 769px) {
+    #wedding-info .pading-text {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+    #wedding-info .pading-text {
+        margin-bottom: 30px;
+    }  
+    #wedding-info.onepage {
+        padding: 20px 0 60px 0;
+    }
+    #wedding-info.v2 {
+        padding: 20px 0 60px 0;
+    }
+}
+
+/* ------------------------------------------------ */
+/* 9. Countdown Section
+/* ------------------------------------------------ */
+
+#countdown .countdown-box {
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#countdown.v2 .subtitle {
+    color: #fff;
+}
+#countdown .countdown-box .headline {
+    color: #fff;
+}
+#countdown.v2 .countdown-box .headline {
+    margin-bottom: 20px;
+}
+#countdown .countdown-box .strike > span:before,
+#countdown .countdown-box .strike > span:after {
+    background: #ffffff;
+}
+#countdown .wraper-clock {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 20px 30px; 
+}
+#countdown .wraper-clock .value {
+    font: normal 80px/40px "Great Vibes";
+    color: #ffffff;
+    padding-bottom: 18px;
+    min-width: 115px;
+}
+#countdown .wraper-clock .value-label {
+    font: normal 28px/28px "Great Vibes";
+}
+#countdown .sep {
+    display:none;
+}
+#countdown #clock {
+    padding: 40px 0px;
+}
+#countdown #clock span {
+    font-size: 16px;
+}
+#countdown .controls {
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+#countdown .controls label {
+    font-weight: normal;
+    font-size: 14px;
+}
+#countdown .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+#countdown .subtitle {
+    font-size: 18px;
+    color: #ffffff;
+}
+@media (max-width: 768px) {
+    #countdown .countdown-box .strike > span:before, 
+    #countdown .countdown-box .strike > span:after {
+        background: transparent;
+    }
+}
+@media (min-width: 767px) {
+    #countdown .sep {
+        display: inline-block;
+        height: 90px;
+        line-height: 0px;
+    }
+}
+@media (min-width: 769px) {
+    #countdown #clock span {
+        font-size: 25px;
+    }
+}
+@media (max-width: 767px) {
+    #countdown .wraper-clock .value {
+        font: normal 50px/35px "Great Vibes";
+    }
+    #countdown .headline {
+        font-size: 35px;
+    }
+}
+
+/* ------------------------------------------------ */
+/* 10. Program Of The Day Section
+/* ------------------------------------------------ */
+
+/* 10.1 program Of The Day Header
+------------------------------------ */
+#program {
+    padding: 80px 0 40px 0;
+}
+#program.v2 {
+    padding: 150px 0 50px 0;
+}
+#program.v3 {
+    padding: 130px 0 0 0;
+}
+@media (max-width: 767px) {
+    #program {
+        padding: 60px 0 0 0;
+    }
+}
+#program .headline {
+    font-family: Montserrat;
+    font-size: 25px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#program.onepage .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+}
+#program.v2 .headline {
+    font-family: Montserrat;
+    font-size: 25px;
+    text-align: left;
+    font-weight: normal;
+    margin:0 0 20px 0;
+}
+#program.v3 .headline {
+    font-family: Montserrat;
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    margin:0 0 20px 0;
+}
+#program .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 20px;
+}
+#program .subtitle {
+    font-size: 16px;
+}
+#program .margin {
+    margin-bottom: 60px;
+}
+#program.v2  .margin {
+    margin-bottom: 40px;
+}
+@media (max-width: 767px) {
+    #program .margin {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 767px) {
+    #program .headline {
+        font-size: 35px;
+    }
+    #program .hdv3.headline {
+        font-size: 25px;
+    }
+    #program.v2 .headline {
+        margin: 40px 0 0 0;
+    }
+}
+
+/* 10.2 program Of The Day Info
+------------------------------------ */
+
+#program #program-info {
+    margin-bottom: 40px;
+}
+#program-info .col-md-5 {
+    margin-bottom: 40px;
+}
+
+/* 10.3 program Of The Day Timeline
+------------------------------------ */
+
+#timeline .program-day {
+    color: #373737;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.v2 #timeline .program-day {
+    color: rgb(64, 62, 62);
+    background: transparent;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #eaeaea;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.v3 #timeline .program-day {
+    color: rgb(64, 62, 62);
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 5px;
+}
+#timeline .program-link {
+    padding-left: 50px;
+}
+.v2 #timeline .program-link {
+    padding-left: 10px;
+}
+.v3 #timeline .program-link {
+    padding-left: 10px;
+}
+#timeline .panel-body {
+    padding-left: 90px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-left: 40px;
+    border-left: dashed;
+    border-left-width: 1px;
+    border-left-color: #d0cccc;
+}
+.v2 #timeline .panel-body {
+    padding-left: 0px;
+    padding-top: 15px;  
+    padding-bottom:15px; 
+    margin-left: 0px;  
+    border-left: none;  
+}
+.v3 #timeline .panel-body {
+    padding-left: 0px;
+    padding-top: 15px;  
+    padding-bottom:15px; 
+    margin-left: 0px;  
+    border-left: none;  
+}
+#timeline .panel-default>.panel-heading {   
+    background-color: transparent;
+    border-color: transparent;
+}
+.v2 #timeline .panel-default>.panel-heading {
+    padding: 10px 0px;
+}
+.v3 #timeline .panel-default>.panel-heading {
+    background-color: transparent;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+}
+#timeline .panel-group .panel-heading+.panel-collapse>.list-group,
+#timeline .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 1px solid transparent;
+}
+#timeline .panel-default {
+    border-color: transparent;
+}
+#timeline .panel {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0);
+    box-shadow: 0 1px 1px rgba(0,0,0,0);
+}
+.v3 #timeline .panel {
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0);
+    box-shadow: 0 1px 1px transparent;
+}
+#timeline a.program-link:focus,
+#timeline a.program-link:hover {
+    text-decoration: none;
+}
+.v2 #timeline {
+    padding-left: 60px;
+}
+.v3 #timeline {
+    padding-left: 60px;
+}
+.v3 .panel-group .panel+.panel {
+    margin-top: -5px;
+}
+#collapseFive p{
+    margin-bottom: -5px;
+}
+
+/* ------------------------------------------------ */
+/* 11. Blockquote Section
+/* ------------------------------------------------ */
+
+#blockquote .blockquote-box {
+    margin: 100px 60px;
+    text-align: center;
+}
+#blockquote .bckuote-text {
+    font-family: Great Vibes;
+    font-size: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom:50px;
+}
+#blockquote .quote {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#blockquote.v2 .quote {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#blockquote .bckuote-footer-text {
+    color: #fff;
+    font-size: 18px;
+}
+@media (max-width: 767px){
+    #blockquote .bckuote-text {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+#blockquote.v2 {
+    margin: 50px 0 50px 0;
+}
+
+/* ----------------------------------------------- */
+/* 12. Suscribe Section
+/* ----------------------------------------------- */
+
+#suscribe-box {
+    padding: 80px 0;
+    background: rgba(242, 242, 242, 1);
+}
+#suscribe-box-onepage .reg-box h2 {
+    font-size: 34px;
+    color: #ffffff;
+}
+#suscribe-box-onepage .reg-box h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+#suscribe-box-onepage .reg-box p {
+    color: #ffffff;
+}
+#suscribe-box-onepage .btn-medium-v2 {
+    color: #ffffff;
+}
+#suscribe-box-onepage  .btn-medium-v2:hover {
+    border: 2px solid transparent;
+}
+#suscribe-box-onepage.v2.background-cover::before {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+#suscribe-box-onepage .reg-box {
+    padding: 150px 0;     
+    text-align: center;   
+}
+#suscribe-box.v1 {
+    padding: 20px 0 60px 0;
+    background: #f9f9f9 !important;
+}
+#suscribe-box.v1 a,
+#suscribe-box.v2 a{
+    margin-top: 20px;
+}
+#suscribe-box.v2 {
+    padding: 80px 0;
+    background: #f9f9f9 !important;
+}
+#suscribe-box.v2.v6 {
+    background: #ffffff !important;
+}
+#suscribe-box.v2.onepage {
+    padding: 80px 0;
+}
+@media (max-width: 767px) {
+    #suscribe-box {
+        padding: 60px 0;
+    }
+}
+#suscribe-box .reg-box {
+    padding: 60px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #fff;
+}
+#suscribe-box.v2 .reg-box {
+    padding: 60px 40px 40px 40px;
+    margin-top:  0px;
+    margin-bottom:  0px;
+    text-align: center;
+    background-color: transparent;
+}
+#suscribe-box.v1 .reg-box {
+    padding: 60px 40px 40px 40px;
+    margin-top:  0px;
+    margin-bottom:  0px;
+    text-align: center;
+    background-color: transparent;
+}
+#suscribe-box.v2 .reg-box2 {
+    padding: 0 0 0 20px;
+    margin-top:  0px;
+    margin-bottom:  0px;
+    text-align: center;
+    background-color: transparent;
+}
+@media (max-width: 767px) {
+    #suscribe-box.v2 .reg-box2 {
+        padding:0  10px 0  10px;
+    }
+}
+#suscribe-box .reg-box h2 {
+    font-size: 24px;
+}
+#suscribe-box.v2 .reg-box h2,
+#suscribe-box.v1 .reg-box h2 {
+    font-size: 34px;
+}
+#suscribe-box .reg-box h3 {   
+    font-size: 20px;
+}
+#suscribe-box.v2 .reg-box h3,
+#suscribe-box.v1 .reg-box h3 {   
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+#suscribe-box .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 10px;
+}
+#suscribe-box .reserve-subheadline {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: Great Vibes;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+/* ----------------------------------------------- */
+/*  13. Gallery Images
+/* ----------------------------------------------- */
+
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.portfolio-box .portfolio-box-caption {
+    color: #ffffff;
+    opacity: 0;
+    display: block;
+    background: rgba(0, 0, 0, 0.58);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+.portfolio-box:focus {
+    outline: none;
+}
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.gallery-caption {
+    padding: 15px;
+}
+.image-gallery-full {
+    margin-top: 110px;
+}
+.image-gallery-header-slider {
+    padding: 80px;
+}
+
+/*  13.1. Gallery Images Fluid
+------------------------------------ */
+
+.gallery-caption-fluid {
+    padding: 0px;
+}
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive, .thumbnail a>img,
+.thumbnail>img {
+    display: inline;
+}
+.separator {
+    padding: 50px 0 0 0;
+    background-color: #FFF;
+}
+.margin-section  {
+    margin-top: 60px;
+}
+.margin-blog-section {
+    margin: 60px 0 100px 0;
+}
+@media (max-width: 767px) {
+    .margin-section {
+        margin-top: 40px;
+    }
+}
+
+/* ----------------------------------------------- */
+/*  13.2. Gallery Images Section - Index Page
+/* ----------------------------------------------- */
+
+#portfolio {
+    margin-bottom: 60px;
+}
+#portfolio.v1 {
+    margin: 100px 0;
+}
+#portfolio.v2 {
+    padding: 120px 0;
+    background-color: #f9f9f9 !important;
+    margin-bottom: 0px;
+}
+#portfolio.v3 {
+    padding: 80px 0 120px 0;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+}
+@media (max-width: 767px) {
+    #portfolio {
+        margin-bottom: 40px;
+    }
+}
+.more-images {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: Montserrat;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* 13.3. Gallery Images Header - Index Page
+------------------------------------ */
+
+#portfolio .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#portfolio .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 10px;
+}
+#portfolio .subtitle {
+    font-size: 18px;
+}
+#portfolio .margin {
+    margin: 80px 0 60px 0;
+}
+@media (max-width: 767px) {
+    #portfolio .margin {
+        margin: 60px 0 40px 0;
+    }
+}
+@media (max-width: 767px) {
+    #portfolio .headline {
+        font-size: 35px;
+        padding-top: 10px;
+    }
+}
+
+/* ----------------------------------------------- */
+/*  14. About Here, About Him, Love Story Pages
+/* ----------------------------------------------- */
+
+/* 14.1. About Section Header 
+------------------------------------ */
+
+#about .about-section-wraper {
+    color: #fff;
+    padding-top: 430px;
+    padding-bottom: 40px;
+    max-width: 100%;
+    overflow: hidden;
+}
+#about .about-section-wraper .subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#about .about-section-wraper h1 {
+    font-size: 45px;
+    font-weight:400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#about .about-section-wraper h2 {
+    font-size: 100px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color: #ffffff;
+    font-weight: 400;
+}
+#about .margin {
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    #about .about-section-wraper h1 {
+        font-size: 26px;
+    }
+    #about .about-section-wraper h2 {
+        font-size: 55px;
+    }
+}
+
+/* 14.2. About Section Social
+------------------------------------ */
+
+#about-social {
+    padding: 60px 0 50px 0;
+}
+@media (max-width: 767px) {
+    #about-social {
+        padding: 60px 0 40px 0;
+    }
+}
+/* 14.3. About Section Content
+------------------------------------ */
+
+#about-content {
+    margin-bottom: 60px;
+}
+#about-content .padding-text {
+    padding:0 20px;
+}
+#about-content strong {
+    font-weight: bold;
+    font-size: 16px;
+    color: #101010;
+}
+#about-content p {
+    margin-bottom: 20px;
+}
+
+/* ----------------------------------------------- */
+/*  15. Image Gallery Pages
+/* ----------------------------------------------- */
+
+/* 15.1 Image Gallery Header
+------------------------------------ */
+
+#image-gallery-header {
+    padding: 200px 0 40px 0;
+    background-color: #ffffff;
+}
+#image-gallery-header .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+#image-gallery-header .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 10px;
+}
+#image-gallery-header .subtitle {
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+    #image-gallery-header .headline {
+        font-size: 35px;
+    }
+}
+
+/* 15.2 Image Gallery Content
+------------------------------------ */
+
+#gallery {
+    background-color: #ffffff;
+    padding: 60px 0 100px 0;
+}
+#gallery.v5 {
+    padding: 0 0 100px 0;
+}
+
+/* 15.3 Image Gallery Slider
+------------------------------------ */
+
+#gallery-slider {
+    background-color: #ffffff;
+    padding: 80px 0 100px 0;
+}
+#image-gallery-slider h1 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#image-gallery-slider h2 {
+    font-size: 100px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color: #fff;
+    font-weight: 400;
+}
+#image-gallery-slider .subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#image-gallery-slider .slider-title{
+    padding-top: 20px;
+    width: 300px;
+    border: 2px solid #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    margin-bottom: 10%;
+}
+@media (max-width: 767px) {
+    #image-gallery-slider h1 {
+        font-size: 26px;
+    }
+    #image-gallery-slider h2 {
+        font-size: 55px;
+        margin-top: -15px;
+    }
+    #image-gallery-slider .slider-title {
+
+        width: 250px;
+    }
+}
+
+/* 15.4 Image Gallery Fluid
+------------------------------------ */
+
+#portfolio-fluid {
+    margin-bottom: 0px;
+}
+
+/* ----------------------------------------------- */
+/*  16. The Wedding Ceremony Section
+/* ----------------------------------------------- */
+
+/*  16.1 The Wedding Ceremony - Location & Date
+------------------------------------ */
+
+#location .main-ceremony {
+    color: #fff;
+    padding-top: 200px;
+    padding-bottom: 60px;
+}
+#location .main-ceremony h1 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#location .main-ceremony h2 {
+    font-size: 100px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color: #cebb78;
+    font-weight: 400;
+}
+#location.v2 .main-ceremony h2 {
+    color: #ffffff;
+}
+#location .span-wrapper-transparent {
+    padding: 20px 0 40px;
+    text-align: center;
+    margin-bottom: 70px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ffffff;
+}
+#location.v2 .span-wrapper-transparent {
+    border: 1px solid transparent;
+}
+#location .span-wrapper-transparent .glyphicon {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+    text-shadow: 0 1px 2px #ffffff;
+}
+#location.v2 .span-wrapper-transparent .glyphicon {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: normal;
+    background: rgb(243, 221, 206);
+    border-radius: 50%;
+    text-shadow: 0 1px 2px rgba(51, 51, 51, 0.22);
+}
+#location .span-wrapper-transparent h4 {
+    font-size: 25px;  
+    padding-bottom:10px;
+    font-weight: normal;
+}
+#location .span-wrapper-transparent span {
+    font-weight: normal;
+}
+@media (max-width: 767px) {
+    #location .main-ceremony h1 {
+        font-size: 26px;
+    }
+    #location .main-ceremony h2 {
+        font-size: 55px;
+    }
+    #location .span-wrapper-transparent h4 {
+        font-size: 18px;
+    }
+}
+
+/*  16.2 The Wedding Ceremony - Reception & Party
+------------------------------------ */
+
+#wedding-content {
+    padding: 80px 0 110px;
+}
+#wedding-content h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#wedding-content p {
+    padding-bottom: 10px;
+    text-align: left;
+}
+@media (max-width: 768px) {
+    #wedding-content {
+        padding: 60px 0 40px 0;
+    }
+}
+#wedding-content .fl-wd {
+    width: 100%;
+    margin-top: 15px;
+}
+#wedding-content .pading-text {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width: 768px) {
+    #wedding-content .pading-text {
+        margin-bottom: 60px;
+    }  
+}
+
+/*  16.3 The Wedding Ceremony - Accomodation
+------------------------------------ */
+#accomodation {
+    padding: 80px 0 110px 0;
+}
+@media (max-width: 767px) {
+    #accomodation {
+        padding: 60px 0 70px 0;
+    }
+}
+#accomodation .row,
+#wedding-content .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#accomodation .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    #accomodation .headline {    
+        font-size: 35px;   
+    }
+}
+#accomodation .spacer {
+    width: 60px;
+    border-top: 1px solid #d4cbcb;
+    margin-top: 10px;
+}
+#accomodation .subtitle {
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+    #accomodation .subtitle {
+        padding-bottom: 40px;
+    }
+}
+#accomodation  img {
+    width: 100%;
+    background-color: transparent;
+}
+#accomodation  .row, 
+#accomodation  .col-md-6 {
+    padding: 0;
+}
+#accomodation .loc-subhead {
+    font-weight: bold;
+    clear: both;
+    color: #101010;
+}
+#accomodation .wraper-loc {
+    padding: 15px 30px;
+}
+#accomodation .headline4 {
+    font-size: 20px;
+}
+#accomodation .spacer1 {
+    float: left;
+    width: 70px;
+    border-top: 1px solid #d4cbcb;
+}
+@media (max-width: 768px) {
+    #location .span-wrapper-transparent {
+        padding: 0px;
+        border: 0px;
+    }
+}
+
+/* -------------------------------------------------- */ 
+/* 17. Bridsmaid & Groosman
+/* -------------------------------------------------- */ 
+
+/* 17.1. Bridsmaid & Groosman Header
+------------------------------------ */
+
+#bridsmaid-groosman-header  {
+    padding: 200px 0 20px 0;
+    background-color: transparent;
+}
+@media (max-width: 767px) {
+    #bridsmaid-groosman-header {
+        padding: 200px 0 40px 0;
+    }
+} 
+#bridsmaid-groosman-header .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#bridsmaid-groosman-header .subtitle {
+    font-size: 18px;
+}
+#bridsmaid-groosman-header .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 10px;
+}
+@media (max-width: 767px) {
+    #bridsmaid-groosman-header .headline {
+        font-size: 35px;  
+        padding-top: 10px;
+    }
+}
+
+/* 17.2. Bridsmaid & Groosman Content
+------------------------------------ */
+
+#bridsmaid-groosman-content {
+    background: #ffffff !important;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+#bridsmaid-groosman-content.onepage {
+    background: #ffffff !important;
+}
+#bridsmaid-groosman-content.onepage .thumbnail {
+    background-color: #f9f9f9 !important;
+}
+@media (max-width: 767px) {
+    #bridsmaid-groosman-content {
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+}
+#bridsmaid-groosman-content .thumbnail a>img,
+#bridsmaid-groosman-content .thumbnail>img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px 0 #ccc;
+}
+#bridsmaid-groosman-content .fa-stack {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
+#bridsmaid-groosman-content .social-network-square li a.smallicon {
+    width: 35px;
+    font-size: 10px;
+}
+#bridsmaid-groosman-content .subtitle {
+    font-size: 16px;
+}
+#bridsmaid-groosman-content .thumbnail {
+    background-color: #f9f9f9;
+    border: 1px solid transparent;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+#bridsmaid-groosman-content .thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+#bridsmaid-groosman-content .thumbnail .caption p {
+    color: #949494;
+}
+#bridsmaid-groosman-content h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+#bridsmaid-groosman-content .subtitle {
+    font-size: 16px;
+}
+#bridsmaid-groosman-content .strike > span {
+    padding: 20px 0 20px 0;
+}
+
+/* 17.3. Bridsmaid & Groosman one Page (one-page.html)
+------------------------------------ */
+
+#bridsmaid-groosman-header.onepage {
+    padding: 80px 0 20px 0;
+    background-color: #fff !important;
+}
+@media (max-width: 767px) {
+    #bridsmaid-groosman-header.onepage {
+        padding: 60px 0 40px 0;
+        background-color: #fff;
+    }
+}
+#reserve-image-background .about-section-wraper.onepage {
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+#gift-registry.onepage {
+    padding: 80px 0 60px 0;   
+}
+#gift-registry-image .section-wraper {
+    color: #ffffff;
+    padding-top: 350px;
+    padding-bottom: 200px;
+}
+#gift-registry-image h1 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#gift-registry-image p {
+    color: #ffffff;
+}
+#gift-registry-image hr {
+    margin-top: 0px;
+    width: 40px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+@media (max-width: 767px) {
+    #gift-registry.onepage {
+        padding: 60px 0 40px 0;
+    }
+}
+#portfolio.onepage {
+    margin-bottom: 80px;
+}
+
+/* -------------------------------------------------- */ 
+/* 18. Gift Registry
+/* -------------------------------------------------- */ 
+
+/* 18.1. Gift Registry Header
+------------------------------------ */ 
+#gift-registry {
+    padding: 200px 0 60px 0;  
+}
+@media (max-width: 767px) {
+    #gift-registry {
+        padding: 200px 0 40px 0;
+    }
+}
+#gift-registry .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+#gift-registry.onepage .headline {
+    margin-bottom: 20px;
+}
+#gift-registry .subtitle {
+    font-size: 18px;
+}
+#gift-registry .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 10px;
+}
+@media (max-width: 767px) {
+    #gift-registry .headline {
+        font-size: 35px;
+    }
+}
+
+/* 18.2. Gift Registry Content
+------------------------------------ */ 
+
+#gift-logo-section {   
+    padding: 120px 0 80px 0;
+}
+#gift-logo-section.onepage {   
+    padding: 0px 0 80px 0;
+}
+@media (max-width: 767px) {
+    #gift-logo-section {
+        padding: 0 0 60px 0;
+    }
+}
+#gift-logo-section .thumbnail {
+    padding: 60px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+}
+
+/* -------------------------------------------------- */ 
+/* 19. Blog Section
+/* -------------------------------------------------- */ 
+
+/* 19.1. Blog Header
+------------------------------------ */ 
+
+#blog-header {
+    padding: 150px 0 0 0;
+}
+#blog-header .headline {
+    font-family: Great Vibes;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+#blog-header .subtitle {
+    font-size: 18px;
+    margin: auto;
+    padding: 10px;   
+}
+#blog-header .spacer {
+    width: 60px;
+    border-top: 1px solid #cac8c2;
+    margin-top: 10px;
+}
+
+/* 19.2. Blog Image Title
+------------------------------------ */
+
+#blog-image h1 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#blog-image .about-section-wraper {
+    color: #ffffff;
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+#blog-image .margin {
+    padding: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#blog-image hr {
+    margin-top: 0px;
+    width: 40px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+#blog-image .about-section-wraper .subtitle {
+    font-size: 16px;
+    color:  #ffffff;
+    text-transform: uppercase;
+}
+#blog-image.background-cover::before{
+    background-color: rgba(0, 0, 0, 0.16);
+}
+@media (max-width: 767px) {
+    #blog-image h1 {
+        font-size: 26px;
+    }
+    #blog-image .margin {
+        width: 250px;
+    }
+    #blog-image .about-section-wraper {
+        padding-top: 250px;
+        padding-bottom: 100px;
+    }
+}
+
+/* 19.3. Blog Slider
+------------------------------------ */
+
+#blog-slider h2 {
+    margin-top: -5px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 85px;
+    font-family: Great Vibes;
+}
+
+#blog-content-slider {
+    margin-top: 80px;
+}
+@media (max-width: 767px) {
+    #blog-content-slider {
+        margin-top: 60px;
+    }
+}
+#blog-slider .slider-title-box {
+    padding: 20px;
+    margin-bottom: 10%; 
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#blog-slider hr {
+    margin-top: 0px;
+    width: 40px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+#blog-slider .about-section-wraper .subtitle {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+@media (max-width: 767px) {
+    #blog-slider .slider-title-box {
+        width: 200px;
+    }
+}
+
+/* 19.4. Blog Gallery Content
+------------------------------------ */
+
+#blog-imageg-content {
+    margin: 80px 0 0 0;
+}
+@media (max-width: 767px) {
+    #blog-imageg-content {
+        margin: 60px 0 0 0;
+    }
+}
+.blog-content {
+    padding: 0px;
+}
+.blog-header-headline {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 20px 0;
+}
+.blog-image-header-headline {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 0 20px 0;
+}
+.blog-content .blog-image {
+    position: relative;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    background-position: 50% 0;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media (max-width: 768px) {    
+    .blog-content .blog-image {
+        background-attachment: scroll;
+    }
+}  
+.blog-content .blog-image::before {
+    background-color: rgba(0, 0, 0, 0.13);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;  
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.blog-content .blog-wraper {
+    position: relative;
+    padding: 250px 40px 40px 40px;
+}
+.blog-content .blog-wraper a, 
+.blog-content .blog-wraper a:focus,
+.blog-content .blog-wraper a:hover {
+    color: #fff;
+    text-decoration: none; 
+}
+.blog-content .blog-wraper h3{
+    font-size: 24px;
+}
+.blog-content .blog-wraper p {
+    line-height: 18px;
+    font-size: 16px;
+    font-family: Lora;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color:  #ffffff;
+}
+.blog-content .autors {
+    width: 125px;
+    padding: 10px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+.blog-content .autors:hover {
+    color: #ffffff;
+    background: #ffd0bc;
+}
+
+/*  19.5. Blog Single Page
+------------------------------------ */
+
+.margin-single-post {
+    margin: 0 0 60px 0;
+}
+@media (max-width: 767px) {
+    .margin-single-post {
+        margin: 0 0 40px 0;
+    }
+}
+.padding-single-post {
+    padding: 100px 0;
+}
+@media (max-width: 767px) {
+    .padding-single-post {
+        padding: 60px 0;
+    }
+}
+#about-content-single-post {
+    margin: 50px 0 60px 0;
+}
+@media (max-width: 767px) {
+    #about-content-single-post {
+        margin: 40px 0 60px 0;
+    }
+}
+#about-content-single-post .padding-text {
+    padding: 0 20px;
+}
+#about-content-single-post .img-responsive  {
+    display: inherit;
+}
+#comment-form {
+    padding: 70px 0 80px 0;
+}
+@media (max-width: 767px) {
+    #comment-form {
+        padding: 60px 0 60px 0;
+    }
+}
+#comment-form .padding-text{
+    padding: 20px;
+}
+#comment-form .btn-medium {
+    background-color: #ffffff;
+    color: #999;
+}
+#comment-form .btn-medium {
+    padding: 10px 12px;
+    margin-top: 5px;
+    color:#615e5e;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#comment-form .btn-medium:hover {
+    color:#FFF;
+    background: #e1b6a0;
+    border: 1px solid #c0b079;
+}
+#comment-form label {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.blog-content.padding-single-post .blog-image {
+    border-color: #f9f9f9;
+}
+.form-control {
+    padding: 12px 12px;
+}
+#about-social-2 .social-network-square i {
+    display: inline-block;
+    border-style: none;
+    border-width: inherit;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.0001);
+}
+#about-social-2 .social-network-square li a {
+    width: 30px;
+    height: 40px;
+    font-size: 14px;
+}
+.padding-single-post.blog-content .blog-wraper {
+    position: relative;
+    padding: 150px 40px 40px 40px;
+}
+.block-box-comment input {    
+    height: 38px;
+}
+
+/* -------------------------------------------------- */ 
+/* 20. Register Section
+/* -------------------------------------------------- */ 
+
+/* 20.1. Register Image Title
+------------------------------------ */ 
+
+#reserve-image .about-section-wraper {
+    color: #fff;
+    padding-top: 350px;
+    padding-bottom: 200px;
+}
+#reserve-image .about-section-wraper h1 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#reserve-image .about-section-wraper h2 {
+    font-size: 100px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color: #cebb78;
+    font-weight: 400;
+}
+#reserve-image.v2 .about-section-wraper h2 {
+    color: #ffffff;
+}
+#reserve-image .strike-1 {
+    padding-top: 20px;
+}
+#reserve-image .spacer,
+#reserve-image-background .spacer{
+    margin-top: 0px;
+    width: 40px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+#reserve-image-background .about-section-wraper h1 {
+    font-size: 45px;
+    font-weight: 400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#reserve-image-background .about-section-wraper h2 {
+    font-size: 100px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color: #ffffff;
+    font-weight: 400;
+}
+#reserve-image-background.v2 .about-section-wraper h2 {
+    color: #ffffff;
+}
+#reserve-image-background .about-section-wraper .title,
+#reserve-image .about-section-wraper .title {
+    font-size: 18px;
+    color: #fff;
+    padding-top: 10px;
+}
+#reserve-image-background .strike-1 {
+    padding-top: 20px;
+
+}
+#reserve-image-background .block-box-rsrv {
+    margin-bottom: 80px;
+    padding: 60px 60px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+#reserve-image-background .about-section-wraper {
+    color: #fff;
+    padding-top: 250px;
+    padding-bottom: 50px;
+}
+#footer .wraper-footer3 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0 150px 0;
+    color: #FFF;
+}
+#reserve-image-background .btn-medium {
+    margin-top: 25px;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#reserve-image-background .btn-medium:hover {
+    color: #101010;
+    text-decoration: none;
+    background: #fff;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+#reserve-image-background .btn {
+    padding: 10px 12px;
+    font-family: Lora;
+}
+#rsrv-image-box .rsrv-image-box {
+    color: #ffffff;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 250px 0 100px 0;
+}
+#rsrv-image-box .rsrv-image-box.v2 {
+    padding: 150px 0 100px 0;
+}
+#rsrv-image-box .headline {
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 50px;
+    text-align: center;
+    font-family: Great Vibes;
+}
+#rsrv-image-box .subtitle {
+    font-size: 18px;
+    color: white;
+}
+.head-box {
+    padding-bottom: 40px;
+}
+@media (max-width: 767px) {
+    #reserve-image .about-section-wraper h1,
+    #reserve-image-background .about-section-wraper h1 {
+        font-size: 26px;
+    } 
+}
+@media (max-width: 767px){
+    #reserve-image .about-section-wraper h2,
+    #reserve-image-background .about-section-wraper h2 {
+        font-size: 55px;
+    }  
+}
+
+/* 20.2. Register Header
+------------------------------------ */ 
+
+#reserve-header {
+    padding: 60px 0 0 0;
+    background: #fff;
+}
+#reserve-header h2 {
+    font-size: 30px;
+}
+#reserve-header .spacer {
+    width: 60px;
+    border-top: 1px solid #c0b079;
+    margin-top: 10px;
+}
+#reserve-header .subtitle {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+/* 20.3. Register Form
+------------------------------------ */ 
+
+#reserve-form {
+    padding: 60px 0;
+}
+@media (max-width: 767px) {
+    #reserve-form {
+        padding: 40px 0;
+    }
+}
+#reserve-form .block-box-rsrv {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    background: #f9f9f9 !important;
+    padding: 40px 80px 60px 80px;
+}
+@media (max-width: 767px) {
+    #reserve-form .block-box-rsrv {
+        padding: 40px 20px 60px 20px;
+    }
+}
+#reserve-form .form-group {
+    margin-bottom: 20px;
+}
+.rsrv-section-wraper {
+    margin-bottom: 50px;
+}
+.rsrv-section-wraper h1{
+    margin-bottom: 30px;
+}
+#reserve-form .form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: normal;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid #cccccc;
+    color: #515252;
+}
+#reserve-form .form-control.error {
+    border: 1px solid #f23b43;
+}
+#reserve-image-background .form-control {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #ffffff;
+}
+#reserve-image-background .form-control:focus {
+    border-color: #ffffff;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(255, 255, 255);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(255, 255, 255);
+}
+#reserve-form label {
+    font-family: Montserrat;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+#reserve-image-background label {
+    font-family: Lora;
+    font-size: 13px;
+}
+#reserve-form .btn-medium {
+    letter-spacing: 3px;
+    background-color: #e1b6a0;
+    color: #ffffff;
+}
+#reserve-form .btn-medium:hover {
+    color: #e1b6a0;
+    background:#fff;
+}
+
+/* -------------------------------------------------- */ 
+/* 21. Social Icons
+/* -------------------------------------------------- */ 
+
+.social-network-square li {
+    display: inline;
+    margin: 0px;
+}
+.social-network-square {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+.social-network-square li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+.social-network-square li a:hover i {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+    background: transparent;
+    color: #101010;
+    box-shadow: 0px 0px 2px #ffffff;
+}
+.social-network-square i {
+    display: inline-block;
+}
+.social-network-square li a.smallicon {  
+    width: 15px;
+    font-size: 8px;
+}
+.social-network-square li a.smallicon i,
+.social-network-square li a.smallicon:hover i{   
+    color: #333333;
+}
+.fa-stack {   
+    color: #333333;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+
+/* -------------------------------------------------- */ 
+/* 22. Image Overly Effect
+/* -------------------------------------------------- */  
+
+.effects {
+    padding-left: 0px;
+}
+.effects-pad {
+    padding-left: 15px;
+}
+.effects .img {
+    position: relative;
+    overflow: hidden;
+}
+.effects .img:nth-child(n) {
+    margin-right: 5px;
+}
+.effects .img:first-child {
+    margin-left: 0px;
+}
+.effects .img:last-child {
+    margin-right: 0;
+}
+.effects .img img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+.overlay {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.43);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+a.expand {
+    z-index: 100;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    text-decoration:none;
+}
+a.expand-v2 {
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.effect-overlay .overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.effect-overlay .overlay a.expand {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.effect-overlay .img.hover .overlay {
+    opacity: 1;
+}
+.effect-overlay .img.hover .overlay a.expand {
+    width: 120px;
+    height: 55px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.overlay:before {
+    top: 20px;
+    right: 10px;
+    bottom: 20px;
+    left: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.inner-container {
+    padding: 20px 30px;
+    background: #f8f8f8;
+}
+.caption-subheader {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    width: 120px;
+    border: 1px solid #ffffff;
+    background:rgba(239, 239, 239, 0.09);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+.caption-subheader-v2 {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 400;
+    width: 120px;
+    background-color: #e1b6a0;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+.caption-subheader-v2:hover {
+    color: #060606;
+    background-color: #ffffff;
+} 
+.caption-subheader-v3 {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 400;
+    width: 130px;
+    background-color: #e1b6a0;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+.caption-subheader-v3:hover {
+    color: #060606;
+    background-color: #ffffff;
+}
+.img::before {
+    background-color: rgba(0, 0, 0, 0.16);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .effects .img {
+        z-index: 90;
+    }  
+}
+.inner-head-deco {
+    bottom: 0;
+    display: block;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    padding: 40px;
+    width: 100%;
+    z-index: 100;
+}
+.inner-head-deco-v2 {
+    bottom: 0;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    padding: 10px 10px 0 30px;
+    width: 100%;
+    height: 100%;
+}
+.inner-head-container{
+    position: relative;
+}
+.inner-text-image {
+    bottom: 0;
+    display: block;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* -------------------------------------------------- */  
+/* 23. Line Separator 
+/* -------------------------------------------------- */   
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 0px;
+    color: #ece5d9;
+}
+.strike > span {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    padding: 30px 0 40px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 16px;
+}
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background: #b1a675;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 13px;
+}
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+.strike-1 {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 0px;
+}
+.strike-1 > span {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+.strike-1 > span:before,
+.strike-1 > span:after {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    width: 10px;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 13px;
+}
+#preloader .strike-1 > span:before,
+#preloader .strike-1 > span:after {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    width: 10px;
+    height: 1px;
+    background: rgba(0,0,0,.0001);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 13px;
+}
+.strike-1 > span:before {
+    right: 100%;
+    margin-right: 5px;
+}
+.strike-1 > span:after {
+    left: 100%;
+    margin-left: 5px;
+}
+
+/* -------------------------------------------------- */  
+/* 24. Triangle Separator
+/* -------------------------------------------------- */    
+
+section {
+    position: relative;
+}
+section::before {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+.style-triangle::before {
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    background: #ffffff;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 10
+}
+.style-triangle-grey::before {
+    background: rgba(242, 242, 242, 1);
+}
+
+/* -------------------------------------------------- */  
+/* 25. Background Cover
+/* -------------------------------------------------- */  
+
+.background-cover {
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+@media (max-width: 768px) {    
+    .background-cover {
+        background-attachment: scroll;
+    }
+}
+.background-cover::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.v2.background-cover::before {
+    background-color: rgba(0, 0, 0, 0.26) !important;
+}
+
+/* -------------------------------------------------- */ 
+/* 26. Magnific Popup Plugin Custom
+/* -------------------------------------------------- */ 
+
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+/* -------------------------------------------------- */ 
+/* 27. Panel Image Reorder
+/* -------------------------------------------------- */ 
+
+@media (max-width: 769px) {
+    .row.reorder-xs {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        direction: rtl;
+    }
+    .row.reorder-xs > [class*="col-"] {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        direction: ltr;
+    }
+}
+
+/* ------------------------------------------------ */ 
+/*  28. Owl Carousel
+/* ------------------------------------------------ */ 
+
+#gift-logo-section .owl-theme .owl-controls{
+    margin-top: 10px;
+    text-align: center;
+}
+#gift-logo-section  .item {
+    padding: 80px 40px;
+    margin: 15px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+}
+#gift-logo-section.onepage .item {
+    padding: 0 40px 40px 40px;
+    margin: 15px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+#gift-logo-section  .owl-theme .owl-controls .owl-buttons div{
+    color: #FFF;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: #869791;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+    opacity: 0.5;
+}
+#gift-logo-section  .owl-theme .owl-controls.clickable .owl-buttons div:hover{
+    filter: Alpha(Opacity=100);/*IE7 fix*/
+    opacity: 1;
+    text-decoration: none;
+}
+#gift-logo-section  .owl-theme .owl-controls .owl-page{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;/*IE7 life-saver */
+}
+#gift-logo-section  .owl-theme .owl-controls .owl-page span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #949494;
+}
+#gift-logo-section  .owl-theme .owl-controls .owl-page.active span,
+#gift-logo-section  .owl-theme .owl-controls.clickable .owl-page:hover span{
+    filter: Alpha(Opacity=100);/*IE7 fix*/
+    opacity: 1;
+}
+#gift-logo-section  .owl-theme .owl-controls .owl-page span.owl-numbers{
+    height: auto;
+    width: auto;
+    color: #FFF;
+    padding: 2px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+#gift-logo-section  .owl-item.loading{
+    min-height: 150px;
+    background: url(AjaxLoader.gif) no-repeat center center
+}
+
+/* ------------------------------------------------ */ 
+/*  29. Footer
+/* ------------------------------------------------ */ 
+
+footer {
+    position: relative;
+}
+#footer h3 {
+    font-size: 40px;
+    font-weight:400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+}
+#footer h2 {
+    font-size: 90px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color: #ffffff;
+    font-weight: 400;
+}
+#footer #withlove {
+    font-family: 'Great Vibes';
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    padding-bottom: 30px;
+}
+#footer .logo-slider {
+    color: #ffd0bc;
+}
+#footer #with {
+    font-size: 70px;
+    line-height: 70px;
+}
+#footer #love {
+    font-size: 65px;
+    line-height: 65px;
+}
+#footer .wraper-footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 350px 0 100px 0;   
+    color: #FFF;
+}
+#footer .wraper-footer2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding:150px 0 80px 0;
+    color: #FFF;
+}
+#footer .wraper-footer.v2 {
+    padding: 200px 0 100px 0;   
+}
+#footer .wraper-footer.v6 {
+    padding: 200px 0 50px 0;   
+}
+#footer .margin {
+    margin-bottom: 0px;
+}
+.footer-boxed {
+    padding: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-bottom-width: 0px;   
+}
+.footer-background-cover {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.footer-background-cover::before {
+    background-color: rgba(0, 0, 0, 0.24);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+@media (max-width: 767px){
+    #footer h3 {
+        font-size: 26px;
+    }
+    #footer h2 {
+        font-size: 55px;
+    }
+    #footer #with {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    #footer #love {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+/* ------------------------------------------------ */ 
+/*  30. Wedding Menu
+/* ------------------------------------------------ */ 
+
+#menu-header {
+    padding: 200px 0 90px 0;
+    background-color: rgba(242, 242, 242, 1);
+}
+#menu-header .white-border {
+    padding: 40px 40px 0 40px;
+    background: white;
+}
+#menu-header .menu-section-wraper h1 {
+    font-size: 35px;
+    font-weight: 400;
+    font-family: Josefin Slab,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #101010;
+}
+#menu-header .menu-section-wraper h2 {
+    font-size: 65px;
+    font-family: Great Vibes;
+    margin-top: -5px;
+    color:#101010;
+    font-weight: 400;
+}
+#menu-header .menu-section-wraper .img-headline2 {
+    width:250px;
+}
+#menu-header .spacer {
+    margin-top: 0px;
+    padding: 0 0 10px 0;
+    width: 60px;
+    border: 0;
+    border-top: 1px solid #c0b079;
+}
+#menu-header .menu-block {   
+    padding: 40px 20px 60px 20px;
+    margin: 40px 0 80px 0;
+}
+.menu-title {
+    font-family: Great Vibes;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+.menu-subtitle {
+    color: #949494;
+    line-height: 30px;
+    text-shadow: 0 1px 1px #fff;
+    padding-top: 10px;
+}
+i.fa.fa-circle.fa-1 {
+    color: #101010;
+    font-size: 8px;
+}
+i.fa.fa-circle-o {
+    color: #cebb78;
+    font-size: 8px;
+}
+#menu-header .img-headline2 {
+    width: 150px;
+}
+#menu-content {
+    background: rgb(255, 255, 255);
+    padding: 60px 0;
+    margin-bottom: 40px;
+    border: 1px solid rgba(148, 148, 148, 0.66);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.menu-section-wraper .subtitle {
+    line-height: 30px;
+    padding-top: 15px;
+    text-shadow: 0 1px 1px #fff;
+}
+#menu-content.style-triangle::before {    
+    border-right: 1px solid #c3b78a;
+    border-bottom: 1px solid #c3b78a;  
+}
+@media (max-width: 767px) {    
+    #menu-content {
+        padding: 40px 0 0 0;
+        border: 1px solid transparent;    
+    }
+    .menu-bg {
+        background: #fff;
+    }
+    #menu-header {
+        border-bottom: 1px solid #c3b78a;
+    }
+}

@@ -1,0 +1,107 @@
+/**
+********************************************
+************* 12.Photography
+********************************************
+*/
+@use '../abstract/mixins' as *;
+@use '../abstract/breakpoints' as *;
+.lv-photography {
+	&-img {
+		&-1 {
+			&-1 {
+				height: 400px;
+			}
+			&-2 {
+				height: 500px;
+			}
+		}
+	}
+	&-member {
+		&-designation {
+			&-link {
+				font-size: 12px;
+			    text-transform: uppercase;
+			    margin-bottom: 5px;
+			    display: block;
+			    &:hover {
+			    	color: var(--clr-common-black);
+			    }
+			}
+		}
+		&-name {
+		    font-size: 20px;
+	        margin-bottom: 4px;
+		    &:hover {
+		    	color: var(--clr-common-black);
+		    }
+		}
+		&-content {
+		    padding: 16px 0;
+		}
+		&-social-links {
+			& a {
+			    font-size: 14px;
+			    display: inline-block;
+			    padding: 0 12px;
+			    position: relative;
+			    &:hover {
+			    	color: var(--clr-common-black);
+			    }
+			    &::after {
+		    	    position: absolute;
+				    left: -5px;
+				    top: 13px;
+				    content: "";
+				    width: 5px;
+				    height: 5px;
+				    border-radius: 50%;
+				    background-color: var(--clr-body-text);
+			    }
+			    &:first-child::after {
+			    	display: none;
+			    }
+			}
+		}
+	}
+	&-swiper-gallery {
+		&-single {
+			background-color: var(--clr-theme-primary);
+			height: 350px;
+			@media #{$md} {
+				height: 402px;
+			}
+		}
+	}
+}
+.lv-photography-member-social-active {
+	& .lv-photography-img {
+		@include bg_img_cliping_normal;
+	    &:hover {
+    	    @include bg_img_cliping_hover;
+	    }
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.lv-photography-wrap-1 {
+		& .row {
+			& > *:nth-child(2) {
+				order: -3;
+			}
+		}
+	}
+	.lv-photography-gallery-swiper-carousel.pt-145 {
+		padding-top: 164px;
+	}
+}
+.lv-photography-gallery-swiper-carousel.pt-145 {
+	@media #{$xs} {
+		padding-top: 0px;
+	}
+}
+.lv-photography-member-social-share-1-3 {
+	& .lv-photography-img-1-2 {
+		@media #{$lg} {
+			height: 350px;
+		}
+	}
+}

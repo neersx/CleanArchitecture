@@ -1,0 +1,102 @@
+/**
+********************************************
+************* 17.Sidebar
+********************************************
+*/
+@use '../abstract/breakpoints' as *;
+.lv-header-sidebar {
+	&-wrapper {
+		padding: 30px;
+	}
+	&-touch-widget {
+		& .lv-footer-touch-widget-links {
+			& a {
+				font-size: 14px;
+			}
+		}
+		& .lv-footer-title {
+			margin-bottom: 6px;
+		}
+	}
+	&-area {
+		position: fixed;
+	    left: -140%;
+	    top: 0;
+		overflow-y: auto;
+	    z-index: 10;
+	    transition: all .5s;
+	    z-index: 999;
+	    height: 100%;
+	    background: var(--clr-common-white);
+	    width: 400px;
+	    &.header-sidebar-visible {
+	    	left: 0;
+	    }
+	    @media #{$xs} {
+	    	width: 320px;
+	    }
+	}
+	&-logo {
+		text-align: center;
+		& a {
+			max-width: 153.91px;
+			display: inline-block;
+		}
+	}
+	&-close-text {
+		font-size: 14px;
+		font-weight: 3;
+		text-transform: uppercase;
+		padding-right: 5px;
+		display: inline-block;
+		transform: translateY(1px);
+	}
+	&-action {
+		& a {
+			&:hover {
+				color: var(--clr-common-black);
+				& svg {
+					& path {
+						fill: var(--clr-common-black);
+					}
+				}
+			}
+		}
+	}
+	&-official {
+		&-gallery {
+			&-item {
+				height: 100px;
+				background-position: top center;
+			}
+		}
+	}
+	&-widget {
+		& .lv-footer-social-link {
+			& a {
+				font-size: 14px;
+				margin-right: 20px;
+				&::after {
+					left: -14px;
+				}
+			}
+		}
+	}
+}
+.overlay {
+	position: fixed;
+	right: 0;
+	top: 0;
+	cursor: zoom-out;
+	bottom: 0;
+	left: 0;
+	background: var(--clr-common-black);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99;
+	transition: all .3s;
+	&.visible-overlay {
+		opacity: .2;
+		visibility: visible;
+	}
+}
